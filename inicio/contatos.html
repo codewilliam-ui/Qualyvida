@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" tamanhos="57x57" href="../assets/img/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" tamanhos="60x60" href="../assets/img/icon/apple -icon-60x60.png">
+    <link rel="apple-touch-icon" tamanhos="72x72" href="../assets/img/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" tamanhos="76x76" href="../assets/img/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" tamanhos="114x114" href="../assets/img/icon/apple-icon-114x114.png">
+    <link rel=" apple-touch-icon" tamanhos="120x120" href="../assets/img/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" tamanhos="144x144" href="../assets/img/icon/apple-icon-144x144. png">
+    <link rel="apple-touch-icon" tamanhos="152x152" href="../assets/img/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" tamanhos="180x180" href="../assets/img/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" tamanhos="192x192" href="../assets/img/icon/android-icon-192x192.png">
+    <link rel="icon" type="imagem/png" tamanhos="32x32" href="../assets/img/icon/favicon-32x32.png">
+    <link rel="icon" type="imagem/png" tamanhos="96x96" href="../assets/img/icon/favicon-96x96. png">
+    <link rel="icon" type="image/png" tamanhos="16x16" href="../assets/img/icon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/img/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Font Awesome (Ícones onlines)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!--Fim Font Awesome-->
+
+    <!-- CSS do cabeçalho e rodapé-->
+    <link rel="stylesheet" href="../assets/css/HeaderFooter.css">
+    <!-- FIm CSS -->
+
+    <link rel="stylesheet" href="../assets/css/contatos.css">
+    <title>Contatos – Lima Refrigeração</title>
+
+</head>
+
+<body>
+    
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="../" class="logo"><img src="../assets/img/LogoLM.svg" alt="Logotipo"></a>
+            <button class="hamburger"></button>
+            <ul class="nav-list">
+                <li><a href="../">Home</a></li>
+                <li><a href="quem-somos.html">Quem Somos</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="contato">
+        <div class="contato-parallax">
+            <div class="texto-contato">
+                <h1>Fale Conosco</h1>
+            </div>
+        </div>
+    </section>
+
+    <main> 
+        <section class="flex-formulario">
+            <div class="formulario">
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="text" name="honeypot" style="display: none;">
+                    <div class="formulario-titulo">
+                        <h2>Entre em contato</h2>
+                        <p>Para tirar dúvidas, nos dar sugestões, ou fazer reclamações, basta preencher os campos abaixo</p>
+                    </div>
+                    <hr>
+                    <div class="info main">
+                        <div class="flex-info first">
+                            <label for="nome">Nome Completo <span>*</span></label>
+                            <input type="text" name="name" id="nome" required >
+                        </div>
+                        <div class="flex-info second">
+                            <label for="email">E-mail <span>*</span></label>
+                            <input type="email" name="email" id="email" placeholder="Digite seu melhor e-mail" required>
+                        </div>
+                        <div class="flex-info third">
+                            <label for="$subject">Assunto</label>
+                            <select  type="text" name="$subject" id="subject">
+                                <option value="Dúvida">Dúvida</option>
+                                <option value="Sugestão">Sugestão</option>
+                                <option value="Reclamação">Reclamação</option>
+                            </select>
+                        </div>
+                        <div class="flex-info fourth">
+                            <label for="telefone">Telefone <span>*</span></label>
+                            <input type="tel" name="phone" id="telefone" placeholder="(DDD) 99999-9999" required maxlength="13" oninput="formatarTelefone(this)">
+                        </div>
+                        <div class="flex-info fifth">
+                            <label for="mensagem">Digite sua Mensagem <span>*</span></label>
+                            <textarea name="message" id="msg" cols="30" rows="5" maxlength="1500" required></textarea>
+                        </div>
+                    </div>               
+                    <div class="button-submit-reset"><button class="submit" type="submit" value="submit">Enviar</button>
+                    <button class="button-reset" type="reset" >Limpar Campos</button></div>
+                    <input type="hidden" name="accessKey" value="4a992e80-ae11-4541-8941-b669c7d81379">
+                    <input type="hidden" name="redirectTo" value="https://lima-refrigeracao.netlify.app/inicio/feedback.html">
+                </form>
+            </div>
+
+            <div class="flex-localizacao">
+                <div class="localizacao">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3832.4776899429658!2d-47.95765232481684!3d-16.144297984546114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93599bb1953b4feb%3A0x5921bcef0fa3d5bf!2zTGltYSBSZWZyaWdlcmHDp8Ojbw!5e0!3m2!1spt-BR!2sbr!4v1714173086028!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>                
+                <div class="informacao-empresa">
+                    <div class="empresa">
+                        <i class="fa-solid fa-phone"></i><span>LIGUE PARA NÓS</span>
+                        <a href="tel:+5561984491224">
+                            <p class="telefone">(61) 98449-1224</p>
+                        </a>
+                    </div>
+                    <div class="empresa">
+                        <i class="fa-solid fa-location-dot"></i><span>LOCALIZAÇÃO</span>
+                        <a href="https://maps.app.goo.gl/KmQ5BQLgXabrnxyc9">
+                            <p class="endereço">Rua 9 de Julho, Quadra 54, Lote 23, Loja 02 - Jardim do Inga, Luziânia - GO, 72800-240</p>
+                        </a>
+                    </div>
+                    <div class="empresa">
+                        <i class="fa-solid fa-clock"></i><span>HORÁRIO COMERCIAL</span>
+                        <p class="horario">Seg a Sex: 08h - 18h, Sáb: 08h - 12h, Dom: Fechado  </p>
+                    </div>
+                </div>                
+            </div>
+        </section>   
+    </main>
+
+    <footer class="rodape">
+        <div class="socials_fw">
+            <ul>
+                <a href="https://www.instagram.com/limarefrigeracao.tec" target="_blank" rel="noopener">
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                </a>
+            </ul>
+            <ul>
+                <a href="https://www.facebook.com/profile.php?id=61560726126387&mibextid=ZbWKwL" target="_blank" rel="noopener">
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                </a>
+            </ul>
+            <ul>
+                <a href="mailto:limarefrigeracao.tec@gmail.com" target="_blank" rel="noopener">
+                    <li><i class="fa-brands fa-google"></i></li>
+                </a>
+            </ul>
+        </div>
+        <div class="adicionais">
+            <a href="termos.html" target="_self">
+                <h3>Terms of Use</h3>
+            </a>
+            <span></span>
+            <a href="support.html" target="_blank" rel="noopener">
+                <h3>Support</h3>
+            </a>
+            <span></span>
+            <a href="politica.html" target="_self">
+                <h3>Privacy Policy</h3>
+            </a>
+        </div>
+        <div class="copyright">
+            <p><a href="https://www.codinn.com.br" target="_blank" rel="noopener">&copy; 2024  Code Sphere Innovation</a></p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/app.js"></script>
+
+    <script>
+        function formatarTelefone(input) {
+  // Remove qualquer caractere que não seja número
+  var telefone = input.value.replace(/\D/g, '');
+
+  // Formatação do número de telefone
+  if (telefone.length === 11) {
+    input.value = '(' + telefone.substring(0, 2) + ') ' + telefone.substring(2, 7) + '-' + telefone.substring(7);
+  } else if (telefone.length === 10) {
+    input.value = '(' + telefone.substring(0, 2) + ') ' + telefone.substring(2, 6) + '-' + telefone.substring(6);
+  } else {
+    input.value = telefone;
+  }
+}
+    </script>
+    
+</body>
+</html>
