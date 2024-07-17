@@ -73,8 +73,13 @@ body {
 .slider {
     margin: 0 auto;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
+}
+@media (max-width:720px){
+    .slider{
+        height: 100vh;
+    }
 }
 .slides {
     width: 400%;
@@ -86,6 +91,7 @@ body {
 }
 .slide {
     width: 100vw;
+    height: 100vh;
     left: 0;
     position: relative;
     transition: 1s;
@@ -122,12 +128,12 @@ body {
 
     margin-left: -100vw;
 }
-#radio3:checked~.first {
+/* #radio3:checked~.first {
     margin-left: -200vw;
 }
 #radio4:checked~.first {
     margin-left: -300vw;
-}
+} */
 .navigation-auto div {
     border: 2.3px solid white;
     padding: 7px;
@@ -138,7 +144,7 @@ body {
 .navigation-auto {
     position: absolute;
     width: 100vw;
-    margin-top: 93vh;
+    margin-top: 80vh;
     display: flex;
     justify-content: center;
 }
@@ -165,17 +171,16 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.119);
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.33);
 }
-.texto_sobreposto img {
+/* .texto_sobreposto img {
     width: auto;
     height: 60vh;
     padding-right: 70px;
     margin-top: 20px;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.515));
-    /* Sombra da imagem alpha */
-}
+    /* Sombra da imagem alpha } */
 .texto_sobreposto h1 {
     width: 50%;
     font: 500 3vw var(--Roboto);
@@ -236,9 +241,8 @@ body {
     align-items: center;
 }
 .intro_compromissos h1 {
-    width: 700px;
     color: white;
-    font: 700 40px var(--Titillium);
+    font: 500 40px var(--Poppins);
 }
 .intro_compromissos button {
     padding: 15px 35px;
@@ -304,7 +308,7 @@ body {
     transform: scale(1.02);
 }
 .icon1::after {
-    content: "Diferentes soluções para cada situação";
+    content: "Cuidado dedicado, onde cada passo é um novo avanço para o bem-estar dos nossos clientes.";
 }
 .icon2::after {
     content: "Utilizamos exclusivamente peças originais em todas as nossas manutenções e reparos";
