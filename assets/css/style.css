@@ -78,7 +78,10 @@ body {
 }
 @media (max-width:720px){
     .slider{
-        height: 100vh;
+        height: 90vh;
+    }
+    .slide img{
+        background-position: -50vw;
     }
 }
 .slides {
