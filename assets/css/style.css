@@ -58,7 +58,7 @@ body {
     --cinza-escuro: #171717;
     /* Variável da cor roxa */
     --roxo: #431096;
-    --roxo2: #250558;
+    --roxo2: #26003E    ;
     --rosa: #E2AFB8;
     /* Variáveis das fontes */
     --Roboto: 'Roboto', sans-serif;
@@ -73,17 +73,10 @@ body {
 .slider {
     margin: 0 auto;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     overflow: hidden;
 }
-@media (max-width:720px){
-    .slider{
-        height: 90vh;
-    }
-    .slide img{
-        background-position: -50vw;
-    }
-}
+
 .slides {
     width: 400%;
     height: 100%;
@@ -147,7 +140,7 @@ body {
 .navigation-auto {
     position: absolute;
     width: 100vw;
-    margin-top: 80vh;
+    margin-top: 100vh;
     display: flex;
     justify-content: center;
 }
@@ -174,8 +167,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 80%;
-    background-color: rgba(0, 0, 0, 0.33);
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.33); */
 }
 /* .texto_sobreposto img {
     width: auto;
@@ -194,7 +187,7 @@ body {
     /* Espçamento do Parágrafo */
 }
 .texto_sobreposto h1 span{
-    color: var(--roxo);
+    color: var(--roxo2);
     font: 500 10vw var(--Poppins);
 }
 .fa-phone{
@@ -860,7 +853,7 @@ details ol li p {
 /* ================== MEDIA QUERY (MAX-WIDTH: 600px) ================== */
 @media (max-width: 600px){
     .slide img{
-        object-position: -350px 0px;
+        /* object-position: -350px 0px; */
     }
 }
 /* ================ FIM MEDIA QUERY (MAX-WIDTH: 600px) ================ */

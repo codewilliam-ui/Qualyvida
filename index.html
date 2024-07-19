@@ -95,8 +95,13 @@
 
             <!-- Slide Images -->
             <div class="slide first">
-                <img class="banner1" src="assets/img/teste.png" alt="Banner 1" />
-                <div class="sobreposicao">
+                <picture class="banner1">
+                    <source media="(min-width: 1200px)" srcset="assets/img/banner3.png">
+                    <source media="(min-width: 768px)" srcset="assets/img/banner3.png">
+                    <img src="assets/img/banner1 mobile.png" alt="">
+                </picture>
+                <img class="banner1" src="assets/img/banner3.png" alt="Banner 1" />
+                <!-- <div class="sobreposicao">
                     <div class="texto_sobreposto">
                         <h1 class="txt-topo-site"><span>Gestão</span> <br> em saúde</h1>
                     </div>
@@ -106,7 +111,7 @@
                             <button class="btn-first"><i class="fa-solid fa-phone"></i>Solicite uma avaliação gratuita!</button>
                         </a>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <div class="slide">
