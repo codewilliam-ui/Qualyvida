@@ -59,7 +59,10 @@ body {
     /* Variável da cor roxa */
     --roxo: #431096;
     --roxo2: #26003E    ;
-    --rosa: #E2AFB8;
+    /* Variável da cor rosa */
+    --rosa: #EE2C68;
+    /* Variável da cor marrom */
+    --marrom:#C97F66;
     /* Variáveis das fontes */
     --Roboto: 'Roboto', sans-serif;
     --Allura: 'Allura', sans-serif;
@@ -272,6 +275,7 @@ body {
     height: 280px;
     width: 380px;    
     border-radius: 15px;
+    cursor: pointer;
 }
 #icon img {
     width: 100%;
@@ -435,21 +439,20 @@ section.servicos details[open] summary, section.servicos details summary:hover {
     background-color: var(--verde-azulado);
     color: white;
 }
-section.servicos .fi.fi-rr-air-conditioner{
-    color: var(--cinza-dark);
+section.servicos .fa.fa-briefcase{
+    color: var(--marrom);
 }
-section.servicos .fa-solid.fa-snowflake{
-    color: var(--winter);
+section.servicos .fa-solid.fa-users{
+    color: var(--celadon_blue);
 }
-section.servicos .fi.fi-rr-heat{
-    color: var(--medium_red);
+section.servicos .fas.fa-building{
+    color: var(--cinza);
 }
-section.servicos .fas.fa-tools{
-    color: var(--prussian_blue);
+section.servicos .fa.fa-shield {
+    color: var(--amarelo);
 }
-.fa-solid.fa-chevron-up{
-    font-size: 12px;
-    color: var(--cinza-escuro);
+.fa.fa-heartbeat{
+    color: var(--rosa);
 }
 section.servicos details[open] summary .fa-solid.fa-chevron-up{
     transform: rotate(180deg);
