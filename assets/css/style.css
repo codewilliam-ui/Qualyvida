@@ -127,10 +127,10 @@ body {
 
     margin-left: -100vw;
 }
-/* #radio3:checked~.first {
+#radio3:checked~.first {
     margin-left: -200vw;
 }
-#radio4:checked~.first {
+/* #radio4:checked~.first {
     margin-left: -300vw;
 } */
 .navigation-auto div {
