@@ -259,15 +259,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 /* ================== MEDIA QUERY (MAX-WIDTH: 600px) =================== */
 @media screen and (max-width: 600px) {
-    .contato, .contato-parallax{
-        height: 40vh;
-    }
-    .contato-parallax{
-        background-position: 90% 50%
-    }
-    .texto-contato h1{
-        font-size: 35px;
-    }
+    
     .flex-formulario{
         padding: 40px 0;
     }

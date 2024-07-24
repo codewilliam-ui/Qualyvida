@@ -120,17 +120,18 @@ body {
 hr{
     color: #ccd5e0;
     margin: 1.5rem auto;
-    max-width: 1300px;
-    width: 80%;
+    max-width: 1258px;
 }
 
 .grid-container{
+    padding: 0;
     max-width: 1300px;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    gap: 1.5rem;
+    gap: 2.5rem;
     position: relative;
+    box-sizing: border-box;
 }
 
 @media (min-width:500px){
@@ -151,10 +152,10 @@ hr{
     height: fit-content;
     margin: 0 auto;
     position: sticky;
-    top: 30px;
+    top: 100px;
 }
 .grid-container .left span{
-    font: 600 1.2rem var(--Poppins);
+    font: 500 1.2rem var(--Roboto);
     margin-bottom: .5em;
     display: block;
     color: var(--space);
@@ -164,15 +165,21 @@ hr{
     padding-left: 20px;
 }
 .grid-container .left li{
-     font: 400 14px var(--Montserrat);
-     padding-top: 10px;
-     list-style: disc;
+     font: 400 15px var(--Roboto);
+     padding-top: 15px;
      color: var(--space);
-     
+     transition: .3s;
+}
+.grid-container .left li i{
+    padding-right: 10px;  color: var(--space); transition: .3s;
+}
+.grid-container .left li:hover i {
+    color: var(--rosa);
 }
 .grid-container .left li:hover{
-    text-decoration: underline;
-    color: var(--rosa);
+    box-sizing: border-box;
+    color: var(--rosa); 
+    padding-left: 10px;
 }
 
 @media (min-width: 1280px) {
@@ -182,30 +189,34 @@ hr{
 }
 
 .grid-container .center p{
-    font: 300 16px var(--Roboto); line-height: 1.75em;
-    margin-bottom: 20px;
+    font: 300 18px var(--Roboto); line-height: 1.75em;
+    margin-bottom: 30px;
 }
 .grid-container .center{
     text-align: justify;
     box-sizing: border-box;
+    margin-bottom: 30px;
 }
 .grid-container .center h2{
     text-align: left;
-    padding-bottom: 15px;
-    font: 400 25px var(--Roboto);
+    padding-bottom: 20px;
+    font: 400 23px var(--Roboto);
     color: var(--space);
 }
-.grid-container .center img{
-    width: 90%; height: 25%;
+ .grid-container .center .container-img{
+    width: 100%; height: 200px; overflow: hidden; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.092);
-    margin: 0 20px 20px;
+    margin-bottom: 30px;
+ }
+.grid-container .center img{
+    width: 100%; height: auto;
 }
 
 .grid-container .right{
     height: fit-content;
     margin: 0 auto;
     position: sticky;
-    top: 30px;
+    top: 100px;
 }
 .grid-container .right img{
     max-width: 300px; height: 600px; border-radius: 5px;
@@ -214,20 +225,40 @@ hr{
 @media (max-width:1280px){
     .grid-container {
         grid-template-columns: 1fr; /* Uma única coluna */
+        
+    }
+    .grid-container .left{
+        position: static;
     }
 }
 @media (max-width: 768px) {
+    hr{
+        display: none;
+    }
+    .blog, .banner-parallax{
+        height: 40vh;
+    }
+    .banner-parallax{
+        background-position: 40% 10%
+    }
+    .texto-blog h1{
+        font-size: 35px;
+    }
+    .grid-container{
+        padding: 20px;
+        gap: 20px;
+    }
+    aside{
+        margin: 0 20px 20px!important;
+    }
 
     /* Ajuste de largura para cada seção */
     .left, .center, .right {
         width: auto; /* Volta ao tamanho automático */
     }
-    .grid-container .left{
-        position: static;
-    }
-
+    
     .grid-container > section:not(:last-child){
-        margin-right: 0px;
+        margin: auto;
     }
     .grid-container .right img{
         max-width: 100%; height: 400px;
@@ -238,3 +269,49 @@ hr{
 .left, .right {
     position: sticky;
 }
+
+
+aside{
+    background-color: var(--cinza-clarinho);
+    max-width: 1256px;
+    border: 1px solid #ccd5e0 ;
+    margin: 24px auto;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+aside .texto-aside{
+    display: flex; flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+aside .container-aside{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; overflow: hidden;
+}
+aside .container-aside img{
+    width: 100%; height: 100%; 
+}
+aside span{
+    font: 500 23px var(--Roboto);
+}
+
+aside button{
+    color: white;
+    text-shadow: black;
+    background-color: var(--amarelo);
+    padding: 15px 20px;
+    border: 1px solid transparent;
+    transition: all .5s;
+    font: 400 14px var(--Poppins);    
+    letter-spacing: 1px;
+}
+aside button:hover{
+    background-color: transparent;
+    color: var(--amarelo);
+    border: 1px solid var(--amarelo);
+}
+
