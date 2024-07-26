@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900);
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 /* ======================= FIM FONTES IMPORTADAS ======================= */
 
 
@@ -39,6 +40,7 @@ body {
     --índigo_blue: #001030;
     --space: #010b1c;
     /* Variável da cor vermelha */
+    --vermelho: #DA251C;
     --medium_red: #A20202;
     --tomate: #FF814D;
     /* Variáveis da cor verde */
@@ -60,6 +62,7 @@ body {
     --Allura: 'Allura', sans-serif;
     --Titillium: 'Titillium Web';
     --Poppins: 'Poppins';
+    --Nunito: 'Nunito', sans-serif;
 }
 /* ============================= FIM ROOT ============================== */
 
@@ -96,17 +99,20 @@ body {
     margin-right: 60px;
 }
 .nav-list a{
-    font: 300 18px var(--Roboto);
+    font: 400 18px var(--Nunito);
     color: black;
     padding-block: 5px;
     position: relative;
+}
+.nav-list a:hover{
+  color: var(--vermelho);
 }
 .nav-list a::after{
     content: " ";
     width: 0%;
     height: 1px;
     position: absolute;
-    background-color: var(--verde-azulado);
+    background-color: var(--vermelho);
     bottom: 0;
     left: 0;
     transition: .5s ease-in-out;
