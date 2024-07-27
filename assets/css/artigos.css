@@ -196,6 +196,7 @@ main {
 }
 
 .blog-item .container {
+    position: relative;
     margin-bottom: 48px;
     background: #fff;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
@@ -302,7 +303,23 @@ ul {
 .blog-item .blog-button:hover i {
     padding-left: 10px;
 }
-
+.blog-item .goBack{
+    position: absolute;
+    bottom: 15px; right: 15px;
+    border: none;
+    border: 1px solid transparent;
+    background-color: var(--vermelho);
+    padding: 8px 12px;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .4s;
+}
+.blog-item .goBack:hover{
+    border: 1px solid var(--vermelho);
+    background-color: transparent;
+    color: var(--vermelho);
+}
 /*  */
 
 .swiper {
@@ -469,3 +486,52 @@ aside button:hover {
     color: var(--amarelo);
     border: 1px solid var(--amarelo);
 }
+
+.scroll-to-top{
+    position:fixed;
+    background-color: var(--vermelho);
+    color: white;
+    border: 1px solid transparent;
+    padding: 11px 15px;
+    bottom: 1rem;
+    right: 1rem;
+    border-radius: 50%; transition: .4s; 
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100%);
+}
+.scroll-to-top:hover{
+    border: 1px solid var(--vermelho);
+    background-color: transparent;
+    color: var(--vermelho);
+}
+
+.scroll-to-top.active{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.back-to-top {
+    background: #fff;
+    cursor: pointer;
+   
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+   
+    line-height: 0;
+   
+    visibility: hidden;
+    opacity: 0;
+   
+    transition: 0.3s;
+    transform: translateY(100%);
+   }
+   
+   .back-to-top.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+   }

@@ -278,7 +278,7 @@ body {
   text-align: center;
 }
 .adicionais a h3 {
-  font: normal 16px var(--Allura);
+  font: normal 16px var(--Nunito)!important;
   color: white;
   border-bottom: 1px solid rgba(255, 255, 255, 0);
   padding-bottom: 2px;
@@ -296,7 +296,7 @@ body {
 .copyright p{
   text-align: center;
   padding-top: 20px;
-  font: normal 14px var(--Allura);
+  font: normal 14px var(--Nunito);
 }
 .copyright p a{
   text-decoration: none; color: white;
