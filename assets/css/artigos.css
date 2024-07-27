@@ -274,7 +274,7 @@ main{
         text-align: center;
     }
     .swiper-slide{
-        height: 180px;
+        height: 180px!important;
     }
 }
 .swiper-slide {
