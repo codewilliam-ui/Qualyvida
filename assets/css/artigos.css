@@ -90,8 +90,9 @@
         background-position: 80% 20% ;
     }
     .banner-parallax.fourth{
-        background-image: url('../img/Item-4.png');
+        background-image: url('../img/Banner\ -\ Alzheimer.png');
         background-position: 80% 20% ;
+        object-fit: cover;
     }
 }
 
@@ -272,6 +273,9 @@ main{
     .explorar{
         text-align: center;
     }
+    .swiper-slide{
+        height: 180px;
+    }
 }
 .swiper-slide {
     text-align: center;
@@ -282,6 +286,7 @@ main{
     width: 210px;
     height: 150px;
 }
+
 .swiper-slide a img {
     position: relative;
     display: block;
