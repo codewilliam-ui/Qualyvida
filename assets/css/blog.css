@@ -99,7 +99,7 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     align-items: start;
-    column-gap: 50px;
+    column-gap: 20px;
     width: 100%;
 }
 @media only screen and (min-width: 1300px) {
@@ -138,6 +138,10 @@ main{
         max-width: 540px;
     }
 }
+
+.blog-item{
+    padding: 0 15px;
+}
 .blog-item .container{
     margin-bottom: 48px;
     background: #fff;
@@ -147,7 +151,7 @@ main{
     transition: 0.3s;
 }
 .blog-item .imagem-blog{
-    width: 100%;height: auto;
+    width: 100%;height: 425px;
     overflow: hidden;
     border-radius: 15px;
     margin-bottom: 18px;
@@ -155,9 +159,8 @@ main{
 }
 
 .blog-item .imagem-blog img{
-    overflow-clip-margin: content-box;
-    overflow: clip;
-    width: 100%; height: auto;
+    width: 100%; height: 100%;
+    object-fit: cover;
 }
 .blog-item .imagem-blog span{
     display: block;
@@ -177,6 +180,10 @@ main{
     .blog-item .texto-item h1{
         font:700 18px var(--Nunito)!important;
     }
+    .blog-item .imagem-blog{
+        width: 100%;height: 175px;
+    }
+
 }
 
 .blog-item .texto-item h1{
@@ -242,6 +249,7 @@ section.posts{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    margin: 0 0 48px 15px;
 }
 
 section.posts .container-posts{

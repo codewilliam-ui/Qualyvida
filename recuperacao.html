@@ -53,6 +53,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <!--Fim Font Awesome-->
 
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Fim Swiper -->
+
     <!-- CSS do cabeçalho e rodapé-->
     <link rel="stylesheet" href="assets/css/HeaderFooter.css">
     <!-- FIm CSS -->
@@ -90,7 +94,7 @@
                     </h1>
                     <div class="data-item">
                         <span class="icone-data"><i class="fa-regular fa-calendar-check"></i>24 de Julho de 2024 </span>
-                        <span class="icone-data"><i class="fa-regular fa-user"></i>Franklin William</span>
+                        <span class="icone-data"><i class="fa-regular fa-user"></i>Israel Oliveira Silva</span>
                     </div>
                     <hr style="margin-bottom: 20px;"> 
                     <p>Se você está em processo de reabilitação motora, pode contar com um cuidador de idosos para auxiliar nas
@@ -125,6 +129,65 @@
                         delicada da vida.</p>
                 </div>
             </div>
+            <div class="container">
+                <div class="texto-item">
+                  <h1 class="explorar">
+                   Outros artigos que você pode gostar
+                  </h1>
+                </div>
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="acompanhamento.html">
+                        <img src="assets/img/Banner - Acompanhamento.png" alt="">
+                        <span>Acompanhamento Hospitalar</span>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="intelectual.html">
+                            <img src="assets/img/Banner - Intelectual.png" alt="">
+                            <span>Deficiência Intelectual</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="alzheimer.html">
+                        <img src="assets/img/Item-4.png" alt="">
+                        <span>Alzheimer</span>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="parkinson.html">
+                        <img src="assets/img/Item-5.png" alt="">
+                        <span>Parkinson</span>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="demencias.html">
+                        <img src="assets/img/Item-6.png" alt="">
+                        <span>Demencias</span>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="disturbios.html">
+                        <img src="assets/img/Item-7.png" alt="">
+                        <span>Distúrbios auditivos e oculares</span>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="paralisia.html">
+                        <img src="assets/img/item-8.png" alt="">
+                        <span>Paralisia Cerebral</span>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="cuidados.html">
+                        <img src="assets/img/Item-9.png" alt="">
+                        <span>Cuidados em domicílio</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </section>
         <section class="posts">
             <a href="acompanhamento.html">
@@ -209,6 +272,38 @@
 
     <script src="assets/js/script.js">
     </script>
+
+    <!-- Initialize Swiper and Reveal-->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      grabCursor: 'true',
+       autoplay: {
+         delay: 3000,
+         disableOnInteraction: false,
+       },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        1: {
+          slidesPerView: 1,
+          autoplay: {
+            delay: 5000,
+          }
+        },
+        520: {
+          slidesPerView: 2,
+        },
+        1220: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  </script>
 </body>
 
 </html>

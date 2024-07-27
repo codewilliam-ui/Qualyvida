@@ -75,12 +75,22 @@
 .banner-parallax.third{
     background-image: url('../img/Banner\ -\ Intelectual.png');
 }
+.banner-parallax.fourth{
+    background-image: url('../img/Banner\ -\ Alzheimer.png');
+}
+.banner-parallax.fifth{
+    background-image: url('../img/Item-5.png');
+}
 @media (max-width: 720px){
     .banner-parallax.second{
         background-image: url('../img/paciente.jpg');
     }
     .banner-parallax.third{
         background-image: url('../img/intelectual.jpg');
+        background-position: 80% 20% ;
+    }
+    .banner-parallax.fourth{
+        background-image: url('../img/Item-4.png');
         background-position: 80% 20% ;
     }
 }
@@ -157,6 +167,9 @@ main{
         max-width: 540px;
     }
 }
+.blog-item{
+    width: 100%;
+}
 .blog-item .container{
     margin-bottom: 48px;
     background: #fff;
@@ -170,7 +183,7 @@ main{
 }
 
 @media (max-width:720px){
-    .blog-item .texto-item h1, .blog-item .texto-item h2{
+    .blog-item .texto-item h1, .blog-item .texto-item h2, h3{
         font:700 18px var(--Nunito)!important;
     }
 }
@@ -194,11 +207,19 @@ main{
     color: var(--vermelho);
 }
 
-.blog-item p{
+.blog-item p, ul{
     font: 400 16px var(--Nunito);
     line-height: 1.7rem;
     color: var(--cinza);
     margin-bottom: 20px;
+    
+}
+
+.blog-item ul{
+    padding-left: 30px;
+}
+.blog-item ul li{
+    margin-bottom: 8px; list-style: disc;
 }
 
 .blog-item .texto-item h2{
@@ -206,13 +227,17 @@ main{
     margin-bottom: 15px; color: var(--space);
 }
 
+.blog-item .texto-item h3{
+    font: 700 20px var(--Nunito);
+    margin-bottom: 15px; color: var(--space);
+}
 .blog-item .texto-item .container-img{
     width: 100%; height: 200px; overflow: hidden; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.092);
     margin-bottom: 30px;
  }
  .blog-item .texto-item img{
-    width: 100%; height: auto;
+    width: 100%; height: 100%; object-fit: cover;
 }
 .blog-item .blog-button{
     display: inline-block;
@@ -232,8 +257,63 @@ main{
     padding-left: 10px;
 }
 
+/*  */
+
+.swiper {    
+    width: 100%;
+    height: auto; 
+    padding: 0 15px; box-sizing: border-box;
+    margin-bottom: 20px;
+}
+@media (max-width:720px){
+    .swiper{
+        width: 90%;
+    }
+    .explorar{
+        text-align: center;
+    }
+}
+.swiper-slide {
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
+    width: 210px;
+    height: 150px;
+}
+.swiper-slide a img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-slide span{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #00000094 100%);
+    font: 400 16px var(--Nunito);
+    color: white;
+    text-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding: 0 10px 20px;
+    box-sizing: border-box;
+  }
+  
+/*  */
+
+
 section.posts{
     padding: 40px 30px 40px;
+    margin-bottom: 48px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
     height: fit-content;
