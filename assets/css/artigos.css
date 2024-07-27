@@ -64,6 +64,7 @@
     overflow: hidden;
     justify-content: center;
     align-items: center;
+    background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -89,21 +90,36 @@
 .banner-parallax.fifth {
     background-image: url('../img/Item-5.png');
 }
+.banner-parallax.sixth {
+    background-image: url('../img/Banner\ -\ Demencia.png');
+}
+.banner-parallax.seventh {
+    background-image: url('../img/Banner\ -\ Distúrbios.png');
+}
+.banner-parallax.eighth {
+    background-image: url('../img/Banner\ -\ Paralisia.png');
+}
+.banner-parallax.nineth {
+    background-image: url('../img/Banner\ -\ Cuidados.png');
+}
 
 @media (max-width: 720px) {
     .banner-parallax.second {
         background-image: url('../img/paciente.jpg');
     }
-
     .banner-parallax.third {
         background-image: url('../img/intelectual.jpg');
         background-position: 80% 20%;
     }
-
     .banner-parallax.fourth {
         background-image: url('../img/Banner\ -\ Alzheimer.png');
         background-position: 80% 20%;
-        object-fit: cover;
+    }
+    .banner-parallax.eighth {
+        background-position: 30% 20%;
+    }
+    .banner-parallax.nineth {
+        background-position: 60% 0%;
     }
 }
 
@@ -240,8 +256,7 @@ main {
     color: var(--vermelho);
 }
 
-.blog-item p,
-ul {
+.blog-item p, .blog-item ul {
     font: 400 16px var(--Nunito);
     line-height: 1.7rem;
     color: var(--cinza);
@@ -283,7 +298,22 @@ ul {
     height: 100%;
     object-fit: cover;
 }
-
+ .blog-item .destaque{
+    font: 900 25px var(--Nunito);
+    background-color: var(--rosa);
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ @media (max-width:520px){
+    .blog-item .destaque{
+        font: 900 20px var(--Nunito);
+    }
+ }
 .blog-item .blog-button {
     display: inline-block;
     margin-top: 20px;
@@ -486,52 +516,3 @@ aside button:hover {
     color: var(--amarelo);
     border: 1px solid var(--amarelo);
 }
-
-.scroll-to-top{
-    position:fixed;
-    background-color: var(--vermelho);
-    color: white;
-    border: 1px solid transparent;
-    padding: 11px 15px;
-    bottom: 1rem;
-    right: 1rem;
-    border-radius: 50%; transition: .4s; 
-    cursor: pointer;
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(100%);
-}
-.scroll-to-top:hover{
-    border: 1px solid var(--vermelho);
-    background-color: transparent;
-    color: var(--vermelho);
-}
-
-.scroll-to-top.active{
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.back-to-top {
-    background: #fff;
-    cursor: pointer;
-   
-    position: fixed;
-    right: 1rem;
-    bottom: 1rem;
-   
-    line-height: 0;
-   
-    visibility: hidden;
-    opacity: 0;
-   
-    transition: 0.3s;
-    transform: translateY(100%);
-   }
-   
-   .back-to-top.show {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-   }
