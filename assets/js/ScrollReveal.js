@@ -24,7 +24,7 @@ ScrollReveal().reveal('.servicos',{
     distance: '200px',   
 });
 
-/* Quem Somos */
+/* Sobre Nós */
 ScrollReveal().reveal('.missao, .valores, .texto-visao, .carrossel',{
     origin: "bottom",
     duration: 2000, /* duração do efeito */

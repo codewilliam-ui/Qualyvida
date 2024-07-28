@@ -68,6 +68,9 @@ body {
 
 
 /* ============================== HEADER =============================== */
+.header .active{
+  color: var(--vermelho);
+}
 .nav{
     height: 70px;
     margin-inline: auto;

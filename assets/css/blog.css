@@ -88,9 +88,7 @@
 }
 /* =========================== FIM BLOG ============================= */
 
-.header .active{
-    color: var(--vermelho);
-}
+
 
 main{
     position: relative;
