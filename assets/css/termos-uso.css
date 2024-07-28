@@ -2,9 +2,7 @@
 /* ====================== FIM CONFIGURAÇÃO UNICODE ===================== */
 
 /* ========================= FONTES IMPORTADAS ========================= */
-@import url('https://fonts.googleapis.com/css2? family= Allura & family= Aref+Ruqaa+Ink:wght@400;700 & family= Cookie & family= Roboto:wght@300; 400;700 & display=swap');
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900);
-@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 /* ======================= FIM FONTES IMPORTADAS ======================= */
 
 
@@ -57,10 +55,7 @@ body {
     --cinza-dark: #333333;
     --cinza-escuro: #171717;
     /* Variáveis das fontes */
-    --Roboto: 'Roboto', sans-serif;
-    --Allura: 'Allura', sans-serif;
-    --Titillium: 'Titillium Web';
-    --Poppins: 'Poppins';
+    --Nunito: 'Nunito', sans-serif;
 }
 /* ============================= FIM ROOT ============================== */
 
@@ -84,9 +79,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed; /* cria o efeito parallax */
     background-size: cover;
-    -webkit-background-size:cover ; /* para ser funcional em outros navegadores */
-    -moz-background-size: cover;
-    -a-background-size:cover;
 }
 .termos-parallax::before {
     content:"";
@@ -102,7 +94,7 @@ body {
     top: 50%;
 }
 .texto-termos h1{
-    font: 400 50px var(--Poppins);
+    font: 700 40px var(--Nunito);
     color: white; 
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.397);
 }
@@ -111,48 +103,56 @@ body {
 
 /* ============================ POLÍTICA =============================== */
 section.politica{
-    width: 100vw;
+    width: 90vw;
+    margin: 50px auto;
 }
 .termos-uso{
-    margin: 90px auto;
-    width: 75vw;
-    font-family: var(--Roboto);
+    position: relative;
+    background: #fff;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+    padding: 30px;
+    margin: auto;
+    width: 100%;
+    font-family: var(--Nunito);
+    box-sizing: border-box;
+    text-align: left;
 }
 .termos-uso h1{
-    font: 400 23px var(--Roboto); color: var(--cinza-escuro);
+    font: 700 23px var(--Nunito); color: var(--space);
+    line-height: 35px;
+    margin: 4px 0 10px;
+}
+.termos-uso h2{
+    font: 700 22px var(--Nunito); color: var(--space);
+    margin-bottom: 15px;
 }
 .termos-uso p, .termos-uso ul{
-    font: 300 18px var(--Roboto); color: black; text-align: justify;
+    font: 400 16px var(--Nunito); color: var(--cinza);
+    line-height: 1.7rem;
+    margin-bottom: 20px;
 }
 .termos-uso p a{
     text-decoration: underline; color: var(--sapphire_blue);
 }
-.termos-uso h1, .termos-uso p, .termos-uso ul, .termos-uso h2 {
-    margin-bottom: 20px; 
-    line-height: 1.5em;
+.termos-uso h3{
+    font: 700 20px var(--Nunito); color: var(--space);
+    margin-bottom: 15px;
 }
 .termos-uso ul li{
-    line-height: 1.75em; list-style: decimal; margin-left: 60px;
+    line-height: 1.7rem; list-style: disc; margin-left: 30px;
+    margin-bottom: 8px;
 }
 h2.mais-info{
-    font: 400 20px var(--Roboto); color: var(--cinza-escuro);
+    font: 700 20px var(--Nunito); color: var(--space);
 }
 /* ========================== FIM POLÍTICA ============================= */
 
 
 /* ================== MEDIA QUERY (MAX-WIDTH: 600px) =================== */
 @media screen and (max-width: 600px) {
-    .banner-termos, .termos-parallax{
-        height: 40vh;
-    }
-    .termos-parallax{
-        background-position: 40% 50%
-    }
-    .texto-termos h1{
-        font-size: 35px;
-    }
-    section.politica .termos-uso{
-        margin: 40px auto;
+    .termos-uso h1, .termos-uso h2, .termos-uso h3{
+        font: 700 18px var(--Nunito);
     }
 }
 /* ================ FIM MEDIA QUERY (MAX-WIDTH: 600px) ================= */
@@ -160,9 +160,6 @@ h2.mais-info{
 
 /* ================= MEDIA QUERY (MAX-WIDTH: 1200px) =================== */
 @media (max-width: 1200px) {
-    section .termos-uso{
-        width: 85vw; word-break: keep-all; 
-    }
     section.politica .termos-uso ul li{
         margin-left: 20px;
     }
