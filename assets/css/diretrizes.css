@@ -160,10 +160,6 @@ h2.mais-info{
 
 /* ================== MEDIA QUERY (MAX-WIDTH: 600px) =================== */
 @media screen and (max-width: 600px) {
-    .lgpd-parallax{
-        background-image: url(../img/lgpd\ -\ mobile.png);
-        background-position: 70% 50%;
-    }
     .politica-privacidade h1, .politica-privacidade h2, .politica-privacidade h3{
         font: 700 18px var(--Nunito);
     }
