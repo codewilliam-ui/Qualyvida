@@ -63,6 +63,16 @@ body {
 .header .active{
   color: var(--vermelho);
 }
+.header .btn-orcamento{
+  background-color: var(--vermelho);
+  padding: 8px;
+  color: white;
+  font: 700 18px var(--Nunito);
+  border-radius: 2px; transition: .3s;
+}
+.header .btn-orcamento:hover{
+  background-color: var(--space);
+}
 .nav{
     height: 70px;
     margin-inline: auto;
@@ -99,10 +109,10 @@ body {
     padding-block: 5px;
     position: relative;
 }
-.nav-list a:hover{
+.nav-list a.normal:hover{
   color: var(--vermelho);
 }
-.nav-list a::after{
+.nav-list a.normal::after{
     content: " ";
     width: 0%;
     height: 1px;
