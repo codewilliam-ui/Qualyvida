@@ -94,9 +94,10 @@ body {
     top: 50%;
 }
 .texto-lgpd h1{
-    font: 700 50px var(--Nunito);
+    font: 700 40px var(--Nunito);
     color: white; 
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.397);
+    text-align: center;
 }
 /* ========================= FIM BANNER LGPD =========================== */
 
@@ -104,62 +105,64 @@ body {
 /* ============================ POLÍTICA =============================== */
 section.politica{
     width: 90vw;
-    margin: auto;
+    margin: 50px auto;
 }
 .politica-privacidade{
     position: relative;
     background: #fff;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
     border-radius: 15px;
-    padding: 35px;
-    margin: 90px auto;
+    padding: 30px;
+    margin: auto;
     width: 100%;
     font-family: var(--Nunito);
     box-sizing: border-box;
+    text-align: left;
 }
-.politica-privacidade h1, .politica-privacidade h2{
-    font: 700 23px var(--Nunito); color: var(--cinza-escuro);
+.politica-privacidade h1 {
+    font: 700 23px var(--Nunito); 
+    color: var(--space);
+    line-height: 35px;
+    margin: 4px 0 10px;
+}
+.politica-privacidade h2{
+    font: 700 22px var(--Nunito); color: var(--space);
+    margin-bottom: 15px;
 }
 .politica-privacidade p, .politica-privacidade ul{
-    font: 400 18px var(--Nunito); color: var(--cinza);; text-align: left;
+    font: 400 16px var(--Nunito); color: var(--cinza);
+    line-height: 1.7rem;
+    margin-bottom: 20px;
 }
 .politica-privacidade p a{
     text-decoration: underline; color: var(--sapphire_blue);
 }
-.politica-privacidade h1, .politica-privacidade h2, .politica-privacidade h3, .politica-privacidade p, .politica-privacidade ul, .politica-privacidade ul li span {
-    margin-bottom: 20px; 
-    line-height: 1.7rem;
-}
 .politica-privacidade h3{
-    font: 700 19px var(--Nunito); color: var(--space);
+    font: 700 20px var(--Nunito); color: var(--space);
+    margin-bottom: 15px;
 }
-.politica-privacidade ul li > span{
-    font: 700 18px var(--Nunito); color: var(--space);
+.politica-privacidade span{
+    font: 700 16px var(--Nunito); color: var(--space);
+    padding-bottom: 15px;
 }
 .politica-privacidade ul li{
-    line-height: 1.75em; list-style: disc; margin-left: 60px;
+    line-height: 1.7rem; list-style: disc; margin-left: 30px;
+    margin-bottom: 8px;
 }
 h2.mais-info{
     font: 700 20px var(--Nunito); color: var(--space);
 }
 .politica-privacidade span.data-vigor{
-    color: var(--cinza-escuro); font: 700 18px var(--Nunito)
+    color: var(--cinza-escuro); font: 700 17px var(--Nunito)
 }
 /* ========================== FIM POLÍTICA ============================= */
 
 
 /* ================== MEDIA QUERY (MAX-WIDTH: 600px) =================== */
 @media screen and (max-width: 600px) {
-    .banner-lgpd, .lgpd-parallax{
-        height: 40vh;
-    }
     .lgpd-parallax{
         background-image: url(../img/lgpd\ -\ mobile.png);
         background-position: 70% 50%;
-        background-position-y: -150%;
-    }
-    .texto-lgpd h1{
-        font-size: 30px;
     }
     .politica-privacidade h1, .politica-privacidade h2, .politica-privacidade h3{
         font: 700 18px var(--Nunito);
@@ -170,9 +173,6 @@ h2.mais-info{
 
 /* ================= MEDIA QUERY (MAX-WIDTH: 1200px) =================== */
 @media (max-width: 1200px) {
-    section .politica-privacidade{
-        width: 85vw; word-break: keep-all; 
-    }
     section.politica .politica-privacidade ul li{
         margin-left: 20px;
     }
