@@ -102,13 +102,17 @@ body {
 
 
 /* ========================= FLEX FORMULÁRIO =========================== */
+main{
+    margin: 50px auto;
+}
 .flex-formulario{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 60px;
+    column-gap: 60px;
     position: relative;
-    margin: 4vw 0;
+    margin: 4vw 0; 
+    row-gap: 80px;
 }
 .formulario{
     width: 500px;
@@ -120,13 +124,13 @@ body {
 form{
     width: 100%;
     height: auto; position: relative;
-    border-radius: 1em;
+    border-radius: 1em; box-sizing: border-box;
 }   
 .formulario-titulo{
     text-align: center;
 }
 .formulario-titulo h2{
-    font: 700 30px var(--Nunito); color: var(--space); margin-bottom: 20px;
+    font: 700 30px var(--Nunito); color: var(--space); margin: 20px 0;
 }
 .formulario-titulo p{
     font: 400 16px var(--Nunito); line-height: 1.7rem;
@@ -207,13 +211,13 @@ input:focus, textarea:focus{
     gap: 20px; 
 }
 .button-submit-reset .submit{
-    padding: 10px 55px; border: 1px solid transparent; background-color: var(--space); color: white; transition: .3s ease-in-out; font: 700 16px var(--Nunito);
+    padding: 10px 55px; border: 1px solid transparent; background-color: var(--space); color: white; transition: .3s ease-in-out; font: 700 15px var(--Nunito);
 }
 .button-submit-reset .submit:hover{
     border: 1px solid var(--space); color: var(--space); background-color: transparent;
 }
 .button-reset{
-    background-color: var(--laranja); padding: 10px 20px; border: 1px solid transparent; font: 700 16px var(--Nunito); color: white; transition: .3s ease-in-out;
+    background-color: var(--laranja); padding: 10px 20px; border: 1px solid transparent; font: 700 15px var(--Nunito); color: white; transition: .3s ease-in-out;
 }
 .button-reset:hover{
     color: var(--laranja); background-color: transparent;
@@ -258,7 +262,7 @@ input[type=number]::-webkit-inner-spin-button {
     }
     .formulario {
         width: 100%; box-shadow: none;
-        margin-top: 40px;
+        margin-top: 40px;  
     }
     .info.main {
         grid-template-columns: 1fr;
