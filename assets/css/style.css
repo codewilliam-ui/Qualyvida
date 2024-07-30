@@ -512,7 +512,7 @@ details ol li p {
 .cookies{
     width: 100vw;
     height: auto;
-    background-color: var(--vermelho);
+    background-color: var(--space);
     position: fixed;
     z-index: 10;
     bottom: 0%;
@@ -526,7 +526,7 @@ details ol li p {
 .cookies .cookies-mensagem .flex-cookies-msg{
     display: flex; justify-content: space-between;
     align-items: center; margin-bottom: 30px;
-    font: 600 18px var(--Poppins); color: white;
+    font: 600 18px var(--Nunito); color: white;
 }
 .cookies .cookies-mensagem .flex-cookies-msg i.fa-solid.fa-plus.mbl{
     display: none;
@@ -545,7 +545,7 @@ details ol li p {
     width: auto; height: 30px;
 }
 .cookies .cookies-mensagem p{
-    font: 300 16px var(--Poppins); line-height: 1.75em;
+    font: 300 16px var(--Nunito); line-height: 1.75em;
     color: white;
 }
 .cookies .cookies-mensagem p a{
