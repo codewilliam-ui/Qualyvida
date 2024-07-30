@@ -2,9 +2,7 @@
 /* ====================== FIM CONFIGURAÇÃO UNICODE ===================== */
 
 /* ========================= FONTES IMPORTADAS ========================= */
-@import url('https://fonts.googleapis.com/css2? family= Allura & family= Aref+Ruqaa+Ink:wght@400;700 & family= Cookie & family= Roboto:wght@300; 400;700 & display=swap');
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900);
-@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 /* ======================= FIM FONTES IMPORTADAS ======================= */
 
 
@@ -39,6 +37,7 @@ body {
     --índigo_blue: #001030;
     --space: #010b1c;
     /* Variável da cor vermelha */
+    --vermelho: #DA251C;
     --medium_red: #A20202;
     --tomate: #FF814D;
     /* Variáveis da cor verde */
@@ -64,10 +63,7 @@ body {
     /* Variável da cor marrom */
     --marrom:#C97F66;
     /* Variáveis das fontes */
-    --Roboto: 'Roboto', sans-serif;
-    --Allura: 'Allura', sans-serif;
-    --Titillium: 'Titillium Web';
-    --Poppins: 'Poppins';
+    --Nunito: 'Nunito', sans-serif;
 }
 /* ============================= FIM ROOT ============================== */
 
@@ -162,60 +158,13 @@ body {
 #radio4:checked~.navigation-auto .auto-btn4 {
     background-color: white;
 }
-.texto_sobreposto {
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: space-between;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background-color: rgba(0, 0, 0, 0.33); */
-}
-/* .texto_sobreposto img {
-    width: auto;
-    height: 60vh;
-    padding-right: 70px;
-    margin-top: 20px;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.515));
-    /* Sombra da imagem alpha } */
-.texto_sobreposto h1 {
-    width: 50%;
-    font: 500 3vw var(--Roboto);
-    color: white;
-    margin-left: 70px;
-    /* text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.259); */
-    line-height: 1.5em;    
-    /* Espçamento do Parágrafo */
-}
-.texto_sobreposto h1 span{
-    color: var(--roxo2);
-    font: 500 10vw var(--Poppins);
-}
-.fa-phone{
-    margin-right: 20px;
-}
-.botao {
-    position: absolute;
-    bottom: 25%;
-    margin-left: 70px;
-}
-.btn-first{
-    border: 1px solid transparent; font: 400 16px var(--Roboto); background-color: var(--laranja); color: white;
-    padding: 10px 20px;
-    border-radius: 50px; transition: .3s ease-in-out;
-}
-.btn-first:hover{
-    transform: scale(1.03);
-}
 /* ======================= FIM CARROSSEL BANNER ======================== */
 
 
 /* ======================== NOSSOS COMPROMISSOS ======================== */ 
 .Nossos_compromissos {
     position: relative;
-    height: 600px;
+    height: 380px;
     width: 100vw;
     justify-content: center;
 }
@@ -231,14 +180,14 @@ body {
     flex-wrap: wrap;
     align-content: center;
     width: 76vw;
-    height: 50%;
+    height: 35%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .intro_compromissos h1 {
     color: white;
-    font: 500 40px var(--Poppins);
+    font: 700 30px var(--Nunito);
 }
 .intro_compromissos button {
     padding: 15px 35px;
@@ -246,121 +195,79 @@ body {
     color: var(--space);
     border: transparent;
     border-radius: 3px;
-    font: 500 17px var(--Poppins);
-    transition: .5s ease-in-out;
+    font: 700 17px var(--Nunito);
+    transition: .4s;
 }
 .intro_compromissos button:hover{
     background-color: transparent;
     color: white;
     border: 1px solid white;
 }
-.mySwiper{
-    height: auto;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-}
+
+
 .swiper {
-    width: 76%;
-    height: 60%;
-    
-    transform: translate(-50%, -50%);
-    
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+@media (max-width:720px) {
+    .swiper {
+        width: 90%;
+    }
+
+    .explorar {
+        text-align: center;
+    }
+
+    .swiper-slide {
+        height: 180px !important;
+    }
+}
+.mySwiper{
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -30%);
 }
 .swiper-slide {
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 280px;
-    width: 380px;    
-    border-radius: 15px;
+    border-radius: 10px;
     cursor: pointer;
-}
-#icon img {
-    width: 100%;
-    height: 100%;
-
-}
-#icon {
-    /* padding: 20px; */
-    position: relative;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    background-color: white;
-    position: relative;
-    align-items: center;
-    display: flex;
-    transition: all 1.5s;
-    flex-direction: column;    
+    overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
-    
+    width: 210px;
+    height: 240px;
 }
-#icon span{
-    font: 400 18px var(--Poppins);
+
+.swiper-slide a img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #00000094 100%);
+    font: 400 16px var(--Nunito);
+    color: white;
+    text-shadow: 0 0 10px black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    padding-bottom: 40px;
+    padding: 0 10px 20px;
     box-sizing: border-box;
-    color: white;
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #00000094 100%);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-/* #icon:hover{
-    transform: scale(1.02);
-}
-.icon1::after {
-    content: "Cuidado dedicado, onde cada passo é um novo avanço para o bem-estar dos nossos clientes.";
-}
-.icon2::after {
-    content: "Utilizamos exclusivamente peças originais em todas as nossas manutenções e reparos";
-}
-.icon3::after {
-    content: "Agende já sua visita e tenha a comodidade de receber um orçamento detalhado sem sair de casa.";
-}
-.icon4::after {
-    content: "Conte conosco para um serviço confiável e duradouro!";
-}
-.icon5::after {
-    content: "Serviços especializados, garantindo seu funcionamento eficiente e prolongando sua vida útil.";
-}
-.icon6::after {
-    content: "Garantimos que seu eletrodoméstico seja reparado e devolvido a você dentro do prazo estabelecido.";
-}
-#icon::after {
-    position: absolute;
-    background-color: white;
-    padding:0 20px;
-    box-sizing: border-box;
-    width: 100%;
-    height: 238px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity .7s ease-in-out;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font: 500 20px var(--Titillium);
-}
-#icon:hover::after {
-    opacity: 1;
-} */
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
 }
 /* ====================== FIM NOSSOS COMPROMISSOS ======================= */
 
@@ -372,7 +279,7 @@ body {
 }
 .texto_servico h1 {
     text-align: center;
-    font: 600 35px var(--Roboto);
+    font: 700 30px var(--Nunito);
     color: var(--índigo_blue);
     margin: 0 0 25px 0;
     z-index: 2;
@@ -391,7 +298,8 @@ body {
     height: auto;
     margin: 10px;
     max-width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.134);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
 }
 .flex-container{
     width: 550px;
@@ -401,14 +309,14 @@ body {
 section.servicos details{
     padding: 0;
     background-color: white;
-    box-shadow: 2px 2px 10px  rgba(67, 67, 67, 0.147);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
     cursor: pointer;
 }
 section.servicos details:not(:last-child){
     margin-bottom: 19px;
 }
 section.servicos details p{
-    font: 300 18px var(--Roboto);
+    font: 500 17px var(--Nunito);
     line-height: 1.5em;
     padding: 8px 20px;
     text-align: justify;
@@ -433,23 +341,23 @@ section.servicos details summary h2 i{
     margin-right: 20px;
 }
 section.servicos details summary h2{
-    font: 400 20px var(--Roboto);
+    font: 700 20px var(--Nunito);
 }
 section.servicos details[open] summary, section.servicos details summary:hover {
     background-color: var(--verde-azulado);
     color: white;
 }
 section.servicos .fa.fa-briefcase{
-    color: var(--marrom);
+    color: var(--roxo2);
 }
 section.servicos .fa-solid.fa-users{
     color: var(--celadon_blue);
 }
 section.servicos .fas.fa-building{
-    color: var(--cinza);
+    color: var(--verde-azulado);
 }
 section.servicos .fa.fa-shield {
-    color: var(--amarelo);
+    color: var(--laranja);
 }
 .fa.fa-heartbeat{
     color: var(--rosa);
@@ -464,22 +372,23 @@ section.servicos details[open] summary .fa-solid.fa-chevron-up{
 .container-parallax{
     width: 100%;
     margin: 0 auto;
+    
 }
 section.module span{
-    font: 400 12px 'Poppins';    
+    font: 700 12px var(--Nunito);    
     letter-spacing: .340em;
     text-transform: uppercase;
     color: white;
     margin: 0 auto 10px auto;
-    z-index: 2;
+    z-index: 2; text-shadow: 0 0 10px rgba(0, 0, 0, 0.308);
 }
 section.module h1{
     width: 700px;
-    font: 700 40px var(--Titillium);
+    font: 700 30px var(--Nunito);
     color: white;
     z-index: 2;
     margin: 0 auto;
-    text-align: center;
+    text-align: center; text-shadow: 0 0 10px rgba(0, 0, 0, 0.308);
 }
 section.module a{
     z-index: 2; text-align: center;
@@ -491,7 +400,7 @@ section.module a button{
     padding: 23px 36px;
     border: 1px solid transparent;
     transition: all .5s;
-    font: 400 14px var(--Poppins);    
+    font: 500 14px var(--Nunito);    
     letter-spacing: 5px;
 }
 section.module a button:hover{
@@ -506,7 +415,7 @@ section.module.parallax{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 70vh ;
+    height: 55vh ;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -534,15 +443,13 @@ section.module.parallax::after{
 
 /* ================================ FAQ ================================ */
 .faq {
-    margin: 20px 5vw 60px;
-    font: bolder 27px var(--Roboto);
+    margin: 40PX 5vw;
     color: var(--índigo_blue);
-    line-height: 1.5em;
 }
 .text_faq {
     text-align: center;
-    padding: 20px;
-    color: var(--space);
+    margin-bottom: 30px;
+    color: var(--space); font: 700 30px var(--Nunito);
 }
 .summary_faq {
     background-color: var(--cinza-claro);
@@ -555,7 +462,7 @@ details {
     margin: 5px;
 }
 details summary {
-    font: normal 18px var(--Roboto);
+    font: 600 18px var(--Nunito);
     color: var(--cinza);
     align-items: center; 
 }
@@ -568,8 +475,8 @@ details[open] summary .fa-plus {
     transform: rotate(45deg);
 }
 details p {
-    padding: 20px;
-    font: normal 17px var(--Roboto); color: var(--cinza);
+    padding: 20px 20px 0;
+    font: 400 17px var(--Nunito); color: var(--cinza);
     text-align: justify;
     line-height: 1.7em;
     text-indent: 1.25em;
@@ -580,12 +487,12 @@ details p {
 
 }
 details ol {
-    padding: 35px;
+    padding: 20px 20px 0 35px;
     list-style-type: none;
 }
 details ol li {
+    font: 400 17px var(--Nunito); color: var(--cinza);
     list-style: decimal;
-    font-size: 16px;
 }
 details ol li p {
     padding: 5px 0;
@@ -593,190 +500,6 @@ details ol li p {
     text-align: justify;
 }
 /* ============================== FIM FAQ ============================== */
-
-/* =========================== CARROSSEL =============================== */
-.carrossel{
-    height: auto;
-    width: 100%;
-    margin-bottom: 4vw;
-}
-.nossas-avaliacoes{
-    margin: 20px 25px;
-}
-.pgf-avaliacoes{
-    font: 300 16px var(--Roboto);
-    margin-top: 1vw;
-    line-height: 1.7em;
-    text-align: center;
-    text-indent: 1.25em;
-}
-.swiper.ct {
-    width: 90%;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.swiper-slide.ct {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    overflow: hidden;
-    border-radius: 30px;
-}
-.swiper-slide.ct .comentarios{
-    justify-content: center;
-    position: relative;
-    width: 100%;
-}
-.swiper-slide.ct .container_comentario{
-    padding: 25px;
-    background-color: var(--cinza-clarinho);
-    border-radius: 30px;
-    position: relative;
-    height: 18vh;
-}
-.container_comentario p{
-    font: normal 16px 'Arial', sans-serif;
-    color:#111111 ;
-    line-height: 1.5em;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-align: left;
-}
-.swiper-slide.ct img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.referencia{
-    display: flex;
-    align-items: center;
-    margin-bottom: 7px;
-    text-align: left;
-}
-.flex_icon{
-    display: flex;
-}
-.flex_icon .img1{
-    width: auto;
-    height: 40px;
-}
-.swiper-slide.ct .icone-google {
-    position: absolute;
-    top: 48px;
-    left: 48px;   
-    width: 20px;     
-}
-.google{
-    width: auto;
-    height: 20px;
-    background-color: var(--cinza-clarinho);
-    padding: 1.5px;
-    border-radius: 50%;
-}
-.icone-google .balao{
-    visibility: hidden;
-    width: auto;
-    background-color: #333;
-    color: #fff;
-    white-space: nowrap;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 10px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-.icone-google .balao::after{
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #333 transparent transparent transparent;
-}
-.icone-google:hover .balao{
-    visibility: visible;
-    opacity: 1;
-}
-.base{
-    margin-left: 13px;
-}
-.informacao{
-    display: flex;
-}
-.informacao a:hover{
-    text-decoration: 1px underline #111111;
-}
-.informacao h3{
-    color: #111111;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100%;
-    margin: 0;
-    font: 550 16px var(--Roboto);
-}
-.informacao img{
-    width: auto;
-    height: 15px;
-    margin-left: 5px;
-}
-.mes{
-    position: relative;
-    display: inline-block;
-}
-.mes span{
-    color: #BCBCBC;
-    font: 400 14px var(--Roboto);
-}
-.avaliacao{    
-    justify-content: left;
-    display: flex;
-}
-.avaliacao i{
-    margin-bottom: 7px;
-}
-.fa-star{
-    width: auto;
-    height: 17px;
-    color: var(--amarelo) ;
-}
-.swiper-navBtn{
-    color:var(--azul-claro);
-    transition: color .3s ease;
-}
-.swiper-navBtn.ct::before, .swiper-navBtn.ct::after{
-    font-size: 40px;
-}
-.swiper-button-next{
-    right: 0;
-}
-.swiper-button-prev{
-    left: 0;
-}
-.swiper-pagination-bullet{
-    background-color: var(--azul-claro);
-    opacity: 1;
-}
-.swiper-pagination-bullet-active{
-    background-color: var(--azul-claro2);
-}
-/* ========================= FIM CARROSSEL ============================= */
 
 
 /* =========================== ÍCONE SOCIAL =========================== */
@@ -809,7 +532,7 @@ details ol li p {
 .cookies{
     width: 100vw;
     height: auto;
-    background-color: var(--space);
+    background-color: var(--vermelho);
     position: fixed;
     z-index: 10;
     bottom: 0%;
@@ -852,7 +575,7 @@ details ol li p {
     text-align: center; margin: 0 40px;
 }
 .cookies .cookies-button button{
-    padding: 10px 80px; border: 1px solid transparent; background-color: var(--azul); color: white; font: 500 16px var(--Poppins); transition: .2s;
+    padding: 10px 80px; border: 1px solid transparent; background-color: var(--azul); color: white; font: 500 16px var(--Nunito); transition: .2s;
 }
 .cookies .cookies-button button:hover{
     transform: scale(1.01);
@@ -861,15 +584,6 @@ details ol li p {
     display: inline; position: absolute; top: 25px; right: 45px;
 }
 /* =========================== FIM COOKIES ============================ */
-
-
-/* ================== MEDIA QUERY (MAX-WIDTH: 600px) ================== */
-@media (max-width: 600px){
-    .slide img{
-        /* object-position: -350px 0px; */
-    }
-}
-/* ================ FIM MEDIA QUERY (MAX-WIDTH: 600px) ================ */
 
 
 /* ================== MEDIA QUERY (MAX-WIDTH: 767px) ================== */

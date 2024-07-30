@@ -311,14 +311,14 @@ section.formulario-enviado .texto-enviado{
     text-align: center;
 }
 section.formulario-enviado .texto-enviado span{
-    font: 500 40px var(--Roboto); color: var(--space);
+    font: 500 40px var(--Nunito); color: var(--space);
 }
 section.formulario-enviado .texto-enviado p{
-    font: 300 18px var(--Roboto); color: var(--cinza-dark);
+    font: 300 18px var(--Nunito); color: var(--cinza-dark);
     padding-top: 15px;
 }
 section.formulario-enviado .texto-enviado button{
-    padding: 10px 50px; margin-top: 30px; background-color: var(--laranja); color: white; border: 1px solid transparent; font: 400 15px var(--Roboto);transition: .4s ease-in-out; cursor: pointer;
+    padding: 10px 50px; margin-top: 30px; background-color: var(--laranja); color: white; border: 1px solid transparent; font: 400 15px var(--Nunito);transition: .4s ease-in-out; cursor: pointer;
 }
 section.formulario-enviado .texto-enviado a button:hover{
     background-color: transparent; border: 1px solid var(--laranja); color: var(--laranja);

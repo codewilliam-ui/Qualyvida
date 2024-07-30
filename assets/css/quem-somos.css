@@ -253,7 +253,7 @@ section.module.parallax{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px;
+    column-gap: 40px;
     height: 100% ;
     width: 100%;
     box-sizing: border-box;
@@ -311,6 +311,7 @@ section.module.parallax{
     .valores .item-valor{
         border-right: none;
         border-bottom: 1px solid var(--cinza-claro);
+        padding: 20px;
     }
 }
 
