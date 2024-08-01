@@ -1,11 +1,8 @@
 @charset "utf-8";
 /* ====================== FIM CONFIGURAÇÃO UNICODE ===================== */
-
 /* ========================= FONTES IMPORTADAS ========================= */
 @import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 /* ======================= FIM FONTES IMPORTADAS ======================= */
-
-
 /* ======================= CONFIGURAÇÕES GLOBAIS ======================= */
 * {
     margin: 0;
@@ -15,16 +12,12 @@
     line-height: 1.5em;
 }
 /* ===================== FIM CONFIGURAÇÕES GLOBAIS ===================== */
-
-
 /* =============================== BODY ================================ */
 body {
     width: 100vw;
     overflow-x: hidden;
 }
 /* ============================= FIM BODY ============================== */
-
-
 /* =============================== ROOT ================================ */
 :root {
     /* Variáveis da cor azul */
@@ -58,17 +51,15 @@ body {
     --Nunito: 'Nunito', sans-serif;
 }
 /* ============================= FIM ROOT ============================== */
-
-
 /* ========================== BANNER TERMOS ============================ */
 .banner-termos {
     width: 100%;
     margin: 0 auto;
     height: 50vh;
 }
-.termos-parallax{
+.termos-parallax {
     display: flex;
-    height: 50vh ;
+    height: 50vh;
     width: auto;
     position: relative;
     overflow: hidden;
@@ -77,36 +68,35 @@ body {
     background-image: url('../img/terms.png');
     background-position: 50% -38vh;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* cria o efeito parallax */
+    background-attachment: fixed;
+    /* cria o efeito parallax */
     background-size: cover;
 }
 .termos-parallax::before {
-    content:"";
+    content: "";
     height: 100%;
     width: 100%;
     position: absolute;
     z-index: 0;
     background: rgba(4, 12, 48, 0.625)
 }
-.texto-termos{
+.texto-termos {
     z-index: 2;
     position: absolute;
     top: 50%;
 }
-.texto-termos h1{
+.texto-termos h1 {
     font: 700 40px var(--Nunito);
-    color: white; 
+    color: white;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.397);
 }
 /* ======================== FIM BANNER TERMOS ========================== */
-
-
 /* ============================ POLÍTICA =============================== */
-section.politica{
+section.politica {
     width: 90vw;
     margin: 50px auto;
 }
-.termos-uso{
+.termos-uso {
     position: relative;
     background: #fff;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
@@ -118,49 +108,56 @@ section.politica{
     box-sizing: border-box;
     text-align: left;
 }
-.termos-uso h1{
-    font: 700 23px var(--Nunito); color: var(--space);
+.termos-uso h1 {
+    font: 700 23px var(--Nunito);
+    color: var(--space);
     line-height: 35px;
     margin: 4px 0 10px;
 }
-.termos-uso h2{
-    font: 700 22px var(--Nunito); color: var(--space);
+.termos-uso h2 {
+    font: 700 22px var(--Nunito);
+    color: var(--space);
     margin-bottom: 15px;
 }
-.termos-uso p, .termos-uso ul{
-    font: 400 16px var(--Nunito); color: var(--cinza);
+.termos-uso p,
+.termos-uso ul {
+    font: 400 16px var(--Nunito);
+    color: var(--cinza);
     line-height: 1.7rem;
     margin-bottom: 20px;
 }
-.termos-uso p a{
-    text-decoration: underline; color: var(--sapphire_blue);
+.termos-uso p a {
+    text-decoration: underline;
+    color: var(--sapphire_blue);
 }
-.termos-uso h3{
-    font: 700 20px var(--Nunito); color: var(--space);
+.termos-uso h3 {
+    font: 700 20px var(--Nunito);
+    color: var(--space);
     margin-bottom: 15px;
 }
-.termos-uso ul li{
-    line-height: 1.7rem; list-style: disc; margin-left: 30px;
+.termos-uso ul li {
+    line-height: 1.7rem;
+    list-style: disc;
+    margin-left: 30px;
     margin-bottom: 8px;
 }
-h2.mais-info{
-    font: 700 20px var(--Nunito); color: var(--space);
+h2.mais-info {
+    font: 700 20px var(--Nunito);
+    color: var(--space);
 }
 /* ========================== FIM POLÍTICA ============================= */
-
-
 /* ================== MEDIA QUERY (MAX-WIDTH: 600px) =================== */
 @media screen and (max-width: 600px) {
-    .termos-uso h1, .termos-uso h2, .termos-uso h3{
+    .termos-uso h1,
+    .termos-uso h2,
+    .termos-uso h3 {
         font: 700 18px var(--Nunito);
     }
 }
 /* ================ FIM MEDIA QUERY (MAX-WIDTH: 600px) ================= */
-
-
 /* ================= MEDIA QUERY (MAX-WIDTH: 1200px) =================== */
 @media (max-width: 1200px) {
-    section.politica .termos-uso ul li{
+    section.politica .termos-uso ul li {
         margin-left: 20px;
     }
 }

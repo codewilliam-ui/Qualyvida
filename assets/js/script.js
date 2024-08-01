@@ -1,25 +1,20 @@
 let count = 1;
 document.getElementById("radio1").checked = true;
-
-setInterval( function(){
+setInterval(function () {
     nextImage();
 }, 6000)
-
-function nextImage(){
+function nextImage() {
     count++;
-    if(count>3){
+    if (count > 3) {
         count = 1;
     }
-
-    document.getElementById("radio"+count).checked = true;
-
-;}
-
-document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById("radio" + count).checked = true;
+    ;
+}
+document.addEventListener('DOMContentLoaded', function () {
     const details = document.querySelectorAll('details');
-    
     details.forEach(detail => {
-        detail.addEventListener('click', function() {
+        detail.addEventListener('click', function () {
             // Fecha todos os detalhes, exceto o clicado
             details.forEach(d => {
                 if (d !== detail) {
@@ -29,6 +24,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-
-

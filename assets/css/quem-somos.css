@@ -1,11 +1,8 @@
 @charset "utf-8";
 /* ====================== FIM CONFIGURAÇÃO UNICODE ===================== */
-
 /* ========================= FONTES IMPORTADAS ========================= */
 @import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 /* ======================= FIM FONTES IMPORTADAS ======================= */
-
-
 /* ======================= CONFIGURAÇÕES GLOBAIS ======================= */
 * {
     margin: 0;
@@ -14,19 +11,13 @@
     list-style: none;
     line-height: 1.5em;
 }
-
 /* ===================== FIM CONFIGURAÇÕES GLOBAIS ===================== */
-
-
 /* =============================== BODY ================================ */
 body {
     width: 100vw;
     overflow-x: hidden;
 }
-
 /* ============================= FIM BODY ============================== */
-
-
 /* =============================== ROOT ================================ */
 :root {
     /* Variáveis da cor azul */
@@ -66,16 +57,13 @@ body {
     /* Variáveis das fontes */
     --Nunito: 'Nunito', sans-serif;
 }
-
 /* ============================= FIM ROOT ============================== */
-
-
+/* ============================= SOBRE NÓS ============================= */
 .sobre-nos {
     width: 100%;
     margin: 0 auto;
     height: 50vh;
 }
-
 .banner-sobre {
     display: flex;
     height: 50vh;
@@ -91,13 +79,11 @@ body {
     background-attachment: fixed;
     /* cria o efeito parallax */
 }
-
-@media(max-width:720px){
-    .banner-sobre{
+@media(max-width:720px) {
+    .banner-sobre {
         background-position: -80vw -20vh;
     }
 }
-
 .banner-sobre::before {
     content: "";
     height: 100%;
@@ -106,20 +92,19 @@ body {
     z-index: 0;
     background: rgba(0, 0, 0, 0.258);
 }
-
 .texto-sobre {
     z-index: 2;
     position: absolute;
     top: 50%;
 }
-
 .texto-sobre h1 {
     font: 700 40px var(--Nunito);
     color: white;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.144);
     text-align: center;
 }
-
+/* =========================== FIM SOBRE NÓS =========================== */
+/* ============================ QUEM SOMOS ============================= */
 section.quem-somos {
     width: 90vw;
     margin: 50px auto;
@@ -132,37 +117,35 @@ section.quem-somos {
     box-sizing: border-box;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
 }
-
-@media(max-width:820px){
-    section.quem-somos .container-texto{
-        max-width: 100%!important;
+@media(max-width:820px) {
+    section.quem-somos .container-texto {
+        max-width: 100% !important;
     }
-    section.quem-somos .container-texto .btn-contato{
-        justify-content: center!important;
+    section.quem-somos .container-texto .btn-contato {
+        justify-content: center !important;
     }
 }
-
 section.quem-somos .img-sobre {
     width: 370px;
     height: 400px;
     position: relative;
 }
-
 section.quem-somos .img-sobre img {
     width: 100%;
     height: 100%;
-    object-fit: cover; border-radius: 15px;
+    object-fit: cover;
+    border-radius: 15px;
 }
-
-section.quem-somos .img-sobre img.float{
+section.quem-somos .img-sobre img.float {
     position: absolute;
     bottom: 10px;
     right: 10px;
     width: 150px;
     height: 150px;
 }
-section.quem-somos .container-texto{
-    max-width: 40%; line-height: 1.7rem
+section.quem-somos .container-texto {
+    max-width: 40%;
+    line-height: 1.7rem
 }
 section.quem-somos .container-texto .migalha {
     background-color: var(--roxo);
@@ -172,19 +155,17 @@ section.quem-somos .container-texto .migalha {
     border-radius: 5px;
     margin-bottom: 15px;
 }
-
 section.quem-somos .container-texto h1 {
-    font: 700 26px var(--Nunito); color: var(--roxo);
+    font: 700 26px var(--Nunito);
+    color: var(--roxo);
     margin: 20px 0;
 }
-
-section.quem-somos .container-texto p{
+section.quem-somos .container-texto p {
     font: 400 16px var(--Nunito);
     color: var(--cinza);
     margin-bottom: 15px;
 }
-
-section.quem-somos .container-texto .btn-contato{
+section.quem-somos .container-texto .btn-contato {
     margin-left: 10px;
     padding: 20px;
     box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.039);
@@ -196,32 +177,32 @@ section.quem-somos .container-texto .btn-contato{
     flex-wrap: wrap;
     gap: 20px;
 }
-section.quem-somos .container-texto .btn-contato span{
+section.quem-somos .container-texto .btn-contato span {
     font: 700 16px var(--Nunito);
     color: var(--verde-azulado);
 }
-section.quem-somos .container-texto .btn-contato button{
+section.quem-somos .container-texto .btn-contato button {
     padding: 6px 15px;
     border: 1px solid transparent;
     background-color: var(--roxo);
     color: white;
-    font:500 16px var(--Nunito);
-    border-radius: 5px; transition: .4s;
+    font: 500 16px var(--Nunito);
+    border-radius: 5px;
+    transition: .4s;
 }
-section.quem-somos .container-texto .btn-contato button:hover{
+section.quem-somos .container-texto .btn-contato button:hover {
     background-color: transparent;
     color: var(--roxo);
     border: 1px solid var(--roxo);
 }
-
 /* ========================= CONTAINER PARALLAX ========================= */
-.container-parallax{
+.container-parallax {
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
 }
-section.module h1{
-    width:500px;
+section.module h1 {
+    width: 500px;
     font: 700 23px var(--Nunito);
     color: var(--space);
     z-index: 2;
@@ -229,11 +210,12 @@ section.module h1{
     text-align: left;
     margin-bottom: 15px;
 }
-section.module p{
-    font: 400 16px var(--Nunito); color: var(--space);
+section.module p {
+    font: 400 16px var(--Nunito);
+    color: var(--space);
 }
-
-section.module .missao, section.module .visao{
+section.module .missao,
+section.module .visao {
     box-sizing: border-box;
     width: 35%;
     margin: 20px;
@@ -242,52 +224,52 @@ section.module .missao, section.module .visao{
     line-height: 1.7rem;
     border-radius: 15px;
 }
-
-@media (max-width:920px){
-    section.module .missao, section.module .visao{
+@media (max-width:920px) {
+    section.module .missao,
+    section.module .visao {
         width: 90%;
     }
 }
-
-section.module.parallax{
+section.module.parallax {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 40px;
-    height: 100% ;
+    height: 100%;
     width: 100%;
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
     background-image: url(../img/Parallax\ -\ sobre\ nós.png);
-    background-position: 50% 50% ;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* cria o efeito parallax */
+    background-attachment: fixed;
+    /* cria o efeito parallax */
     background-size: cover;
-    -webkit-background-size:cover ; /* para ser funcional em outros navegadores */
+    -webkit-background-size: cover;
+    /* para ser funcional em outros navegadores */
     -moz-background-size: cover;
-    -a-background-size:cover;
+    -a-background-size: cover;
 }
 /* ======================= FIM CONTAINER PARALLAX ======================= */
-.container-valores{
+.container-valores {
     width: 100%;
 }
-.container-valores .titulo-valores h1{
+.container-valores .titulo-valores h1 {
     font: 700 28px var(--Nunito);
     color: var(--roxo);
     text-align: center;
     margin-bottom: 15px;
 }
-
-.valores{
+.valores {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
     margin-top: 20px;
-}   
-.valores .item-valor{
+}
+.valores .item-valor {
     width: auto;
     height: auto;
     display: flex;
@@ -298,21 +280,30 @@ section.module.parallax{
     padding: 30px;
     border-right: 1px solid var(--cinza-claro);
 }
-.valores .item-valor img{
+.valores .item-valor img {
     width: 100px;
-    height: 100px; margin-bottom: 15px;
+    height: 100px;
+    margin-bottom: 15px;
 }
-.valores .item-valor span{
+.valores .item-valor span {
     font: 700 17px var(--Nunito);
     color: var(--space);
 }
-
-@media (max-width:720px){
-    .valores .item-valor{
+@media (max-width:720px) {
+    .valores .item-valor {
         border-right: none;
         border-bottom: 1px solid var(--cinza-claro);
         padding: 20px;
     }
 }
-
-
+/* ========================== FIM QUEM SOMOS ============================ */
+/* =========================== SCROLL REVEAL ============================ */
+.img-sobre, 
+.container-texto,
+.missao,
+.visao,
+.titulo-valores,
+.item-valor{
+    visibility: hidden;
+}
+/* ======================== FIM SCROLL REVEAL ======================== */

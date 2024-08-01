@@ -1,11 +1,8 @@
 @charset "utf-8";
 /* ====================== FIM CONFIGURAÇÃO UNICODE ===================== */
-
 /* ========================= FONTES IMPORTADAS ========================= */
 @import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 /* ======================= FIM FONTES IMPORTADAS ======================= */
-
-
 /* ======================= CONFIGURAÇÕES GLOBAIS ======================= */
 * {
     margin: 0;
@@ -15,16 +12,12 @@
     line-height: 1.5em;
 }
 /* ===================== FIM CONFIGURAÇÕES GLOBAIS ===================== */
-
-
 /* =============================== BODY ================================ */
 body {
     width: 100vw;
     overflow-x: hidden;
 }
 /* ============================= FIM BODY ============================== */
-
-
 /* =============================== ROOT ================================ */
 :root {
     /* Variáveis da cor azul */
@@ -57,17 +50,15 @@ body {
     --cinza-escuro: #171717;
     /* Variável da cor roxa */
     --roxo: #431096;
-    --roxo2: #26003E    ;
+    --roxo2: #26003E;
     /* Variável da cor rosa */
     --rosa: #EE2C68;
     /* Variável da cor marrom */
-    --marrom:#C97F66;
+    --marrom: #C97F66;
     /* Variáveis das fontes */
     --Nunito: 'Nunito', sans-serif;
 }
 /* ============================= FIM ROOT ============================== */
-
-
 /* ========================= CARROSSEL BANNER ========================== */
 .slider {
     margin: 0 auto;
@@ -75,7 +66,6 @@ body {
     height: 100vh;
     overflow: hidden;
 }
-
 .slides {
     width: 400%;
     height: 100%;
@@ -120,7 +110,6 @@ body {
     margin-left: 0;
 }
 #radio2:checked~.first {
-
     margin-left: -100vw;
 }
 #radio3:checked~.first {
@@ -153,9 +142,7 @@ body {
     background-color: white;
 }
 /* ======================= FIM CARROSSEL BANNER ======================== */
-
-
-/* ======================== NOSSOS COMPROMISSOS ======================== */ 
+/* ======================== NOSSOS COMPROMISSOS ======================== */
 .Nossos_compromissos {
     position: relative;
     height: 380px;
@@ -169,7 +156,7 @@ body {
     height: 70%;
     background-color: var(--space);
 }
-.flex-intro{
+.flex-intro {
     position: absolute;
     flex-wrap: wrap;
     align-content: center;
@@ -192,21 +179,17 @@ body {
     font: 700 17px var(--Nunito);
     transition: .4s;
 }
-.intro_compromissos button:hover{
+.intro_compromissos button:hover {
     background-color: transparent;
     color: white;
     border: 1px solid white;
 }
-
-
-
-
 @media (max-width:720px) {
     .swiper {
         width: 90%;
     }
 }
-.mySwiper{
+.mySwiper {
     width: 80%;
     position: absolute;
     left: 50%;
@@ -222,7 +205,6 @@ body {
     width: 100%;
     max-height: 210px;
 }
-
 .swiper-slide a img {
     position: relative;
     display: block;
@@ -230,7 +212,6 @@ body {
     height: 100%;
     object-fit: cover;
 }
-
 .swiper-slide span {
     width: 100%;
     height: 100%;
@@ -250,10 +231,8 @@ body {
     box-sizing: border-box;
 }
 /* ====================== FIM NOSSOS COMPROMISSOS ======================= */
-
-
 /* ============================== SERVIÇOS ============================== */
-.servicos{
+.servicos {
     height: auto;
     margin: 20px 0 50px 0;
 }
@@ -264,16 +243,16 @@ body {
     margin: 0 0 25px 0;
     z-index: 2;
 }
-.servicos-ctn{
+.servicos-ctn {
     z-index: 4;
 }
-.flex-servicos{
-   display: flex;
-   flex-wrap: wrap;
-   align-items: flex-start;
-   justify-content: center;
+.flex-servicos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
 }
-.flex-servicos img{
+.flex-servicos img {
     width: auto;
     height: auto;
     margin: 10px;
@@ -281,146 +260,147 @@ body {
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
     border-radius: 15px;
 }
-.flex-container{
+.flex-container {
     width: 550px;
     margin: 10px 25px;
     align-items: baseline;
 }
-section.servicos details{
+section.servicos details {
     padding: 0;
     background-color: white;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
     cursor: pointer;
 }
-section.servicos details:not(:last-child){
+section.servicos details:not(:last-child) {
     margin-bottom: 19px;
 }
-section.servicos details p{
+section.servicos details p {
     font: 500 17px var(--Nunito);
     line-height: 1.5em;
     padding: 8px 20px;
     text-align: left;
 }
-section.servicos details summary{
+section.servicos details summary {
     padding: 15px 30px;
     transition: .3s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-section.servicos details summary .ttn{
+section.servicos details summary .ttn {
     transition: .3s ease-in-out;
 }
 section.servicos details[open] summary .ttn {
-    color: white;   
+    color: white;
 }
 section.servicos details summary:hover .ttn {
-    color: white; 
+    color: white;
 }
-section.servicos details summary h2 i{
+section.servicos details summary h2 i {
     margin-right: 20px;
 }
-section.servicos details summary h2{
+section.servicos details summary h2 {
     font: 700 20px var(--Nunito);
 }
-section.servicos details[open] summary, section.servicos details summary:hover {
+section.servicos details[open] summary,
+section.servicos details summary:hover {
     background-color: var(--verde-azulado);
     color: white;
 }
-section.servicos .fa.fa-briefcase{
+section.servicos .fa.fa-briefcase {
     color: var(--roxo2);
 }
-section.servicos .fa-solid.fa-users{
+section.servicos .fa-solid.fa-users {
     color: var(--celadon_blue);
 }
-section.servicos .fas.fa-building{
+section.servicos .fas.fa-building {
     color: var(--verde-azulado);
 }
 section.servicos .fa.fa-shield {
     color: var(--laranja);
 }
-.fa.fa-heartbeat{
+.fa.fa-heartbeat {
     color: var(--rosa);
 }
-section.servicos details[open] summary .fa-solid.fa-chevron-up{
+section.servicos details[open] summary .fa-solid.fa-chevron-up {
     transform: rotate(180deg);
 }
 /* ============================ FIM SERVIÇOS ============================ */
-
-
 /* ========================= CONTAINER PARALLAX ========================= */
-.container-parallax{
+.container-parallax {
     width: 100%;
     margin: 0 auto;
-    
 }
-section.module span{
-    font: 700 12px var(--Nunito);    
+section.module span {
+    font: 700 12px var(--Nunito);
     letter-spacing: .340em;
     text-transform: uppercase;
     color: white;
     margin: 0 auto 10px auto;
-    z-index: 2; text-shadow: 0 0 10px rgba(0, 0, 0, 0.308);
+    z-index: 2;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.308);
 }
-section.module h1{
+section.module h1 {
     width: 700px;
     font: 700 30px var(--Nunito);
     color: white;
     z-index: 2;
     margin: 0 auto;
-    text-align: center; text-shadow: 0 0 10px rgba(0, 0, 0, 0.308);
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.308);
 }
-section.module a{
-    z-index: 2; text-align: center;
+section.module a {
+    z-index: 2;
+    text-align: center;
 }
-section.module a button{
+section.module a button {
     margin: 45px auto 0 auto;
     color: var(--cinza-dark);
     background-color: var(--amarelo);
     padding: 23px 36px;
     border: 1px solid transparent;
     transition: all .5s;
-    font: 500 14px var(--Nunito);    
+    font: 500 14px var(--Nunito);
     letter-spacing: 5px;
 }
-section.module a button:hover{
+section.module a button:hover {
     background-color: transparent;
     color: white;
     border: 1px solid white;
 }
-section.module:last-child{
+section.module:last-child {
     margin-bottom: 0;
 }
-section.module.parallax{
+section.module.parallax {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 55vh ;
+    height: 55vh;
     width: 100%;
     position: relative;
     overflow: hidden;
     background-image: url(../img/parallax.png);
-    background-position: 50% 50% ;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* cria o efeito parallax */
+    background-attachment: fixed;
+    /* cria o efeito parallax */
     background-size: cover;
-    -webkit-background-size:cover ; /* para ser funcional em outros navegadores */
+    -webkit-background-size: cover;
+    /* para ser funcional em outros navegadores */
     -moz-background-size: cover;
-    -a-background-size:cover;
+    -a-background-size: cover;
 }
-section.module.parallax::after{
-    content:"";
+section.module.parallax::after {
+    content: "";
     height: 100%;
     width: 100%;
     position: absolute;
     z-index: 1;
-    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0%, #00000094 100%);
-    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0% #00000094 100%);
+    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #00000094 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0% #00000094 100%);
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #00000094 100%);
 }
 /* ======================= FIM CONTAINER PARALLAX ======================= */
-
-
 /* ================================ FAQ ================================ */
 .faq {
     margin: 40PX 5vw;
@@ -429,7 +409,8 @@ section.module.parallax::after{
 .text_faq {
     text-align: center;
     margin-bottom: 30px;
-    color: var(--space); font: 700 30px var(--Nunito);
+    color: var(--space);
+    font: 700 30px var(--Nunito);
 }
 .summary_faq {
     background-color: var(--cinza-claro);
@@ -444,7 +425,7 @@ details {
 details summary {
     font: 600 18px var(--Nunito);
     color: var(--cinza);
-    align-items: center; 
+    align-items: center;
 }
 .summary_faq details i {
     margin-right: 20px;
@@ -456,7 +437,8 @@ details[open] summary .fa-plus {
 }
 details p {
     padding: 20px 20px 0;
-    font: 400 17px var(--Nunito); color: var(--cinza);
+    font: 400 17px var(--Nunito);
+    color: var(--cinza);
     text-align: left;
     line-height: 1.7em;
     text-indent: 1.25em;
@@ -464,14 +446,14 @@ details p {
 .faq hr {
     margin: 0 10px;
     border-top: 2px solid #ECECEC;
-
 }
 details ol {
     padding: 20px 20px 0 35px;
     list-style-type: none;
 }
 details ol li {
-    font: 400 17px var(--Nunito); color: var(--cinza);
+    font: 400 17px var(--Nunito);
+    color: var(--cinza);
     list-style: decimal;
 }
 details ol li p {
@@ -480,10 +462,8 @@ details ol li p {
     text-align: left;
 }
 /* ============================== FIM FAQ ============================== */
-
-
 /* =========================== ÍCONE SOCIAL =========================== */
-.whatsapp{
+.whatsapp {
     position: fixed;
     z-index: 3;
     font-size: 40px;
@@ -500,16 +480,14 @@ details ol li p {
     transition: all .3s;
 }
 /* ========================= FIM ÍCONE SOCIAL ========================= */
-
-
 /* ============================= COOKIES ============================== */
-.popup{
+.popup {
     display: none;
 }
-.popup.exibir{
+.popup.exibir {
     display: block;
 }
-.cookies{
+.cookies {
     width: 100vw;
     height: auto;
     background-color: var(--space);
@@ -520,89 +498,109 @@ details ol li p {
     justify-content: center;
     align-items: center;
 }
-.cookies .cookies-mensagem{
-    margin: 40px 0 40px 40px; width: 72%;
+.cookies .cookies-mensagem {
+    margin: 40px 0 40px 40px;
+    width: 72%;
 }
-.cookies .cookies-mensagem .flex-cookies-msg{
-    display: flex; justify-content: space-between;
-    align-items: center; margin-bottom: 30px;
-    font: 600 18px var(--Nunito); color: white;
-}
-.cookies .cookies-mensagem .flex-cookies-msg i.fa-solid.fa-plus.mbl{
-    display: none;
-}
-.cookies .cookies-mensagem .flex-cookies-msg i, .cookies .cookies-button i.fa-solid.fa-plus.dsktp{
-    transform: rotate(45deg); color: var(--space);
-    padding: 5px 6px; border-radius: 35px; background-color: var(--cinza-clarinho); cursor: pointer;
-}
-.cookies .cookies-mensagem .flex-cookies-msg .titulo-cookies{
+.cookies .cookies-mensagem .flex-cookies-msg {
     display: flex;
-}
-.cookies .cookies-mensagem .flex-cookies-msg .titulo-cookies span{
-    margin-left: 15px;
-}
-.cookies .cookies-mensagem .flex-cookies-msg .titulo-cookies img{
-    width: auto; height: 30px;
-}
-.cookies .cookies-mensagem p{
-    font: 300 16px var(--Nunito); line-height: 1.75em;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    font: 600 18px var(--Nunito);
     color: white;
 }
-.cookies .cookies-mensagem p a{
-    color: white; border-bottom: 1px solid white; cursor: pointer;
+.cookies .cookies-mensagem .flex-cookies-msg i.fa-solid.fa-plus.mbl {
+    display: none;
 }
-.cookies .cookies-button{
-    text-align: center; margin: 0 40px;
+.cookies .cookies-mensagem .flex-cookies-msg i,
+.cookies .cookies-button i.fa-solid.fa-plus.dsktp {
+    transform: rotate(45deg);
+    color: var(--space);
+    padding: 5px 6px;
+    border-radius: 35px;
+    background-color: var(--cinza-clarinho);
+    cursor: pointer;
 }
-.cookies .cookies-button button{
-    padding: 10px 80px; border: 1px solid transparent; background-color: var(--azul); color: white; font: 500 16px var(--Nunito); transition: .2s;
+.cookies .cookies-mensagem .flex-cookies-msg .titulo-cookies {
+    display: flex;
 }
-.cookies .cookies-button button:hover{
+.cookies .cookies-mensagem .flex-cookies-msg .titulo-cookies span {
+    margin-left: 15px;
+}
+.cookies .cookies-mensagem .flex-cookies-msg .titulo-cookies img {
+    width: auto;
+    height: 30px;
+}
+.cookies .cookies-mensagem p {
+    font: 300 16px var(--Nunito);
+    line-height: 1.75em;
+    color: white;
+}
+.cookies .cookies-mensagem p a {
+    color: white;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+.cookies .cookies-button {
+    text-align: center;
+    margin: 0 40px;
+}
+.cookies .cookies-button button {
+    padding: 10px 80px;
+    border: 1px solid transparent;
+    background-color: var(--azul);
+    color: white;
+    font: 500 16px var(--Nunito);
+    transition: .2s;
+}
+.cookies .cookies-button button:hover {
     transform: scale(1.01);
 }
-.cookies .cookies-button i.fa-solid.fa-plus.dsktp{
-    display: inline; position: absolute; top: 25px; right: 45px;
+.cookies .cookies-button i.fa-solid.fa-plus.dsktp {
+    display: inline;
+    position: absolute;
+    top: 25px;
+    right: 45px;
 }
 /* =========================== FIM COOKIES ============================ */
-
-
 /* ================== MEDIA QUERY (MAX-WIDTH: 767px) ================== */
-@media (max-width: 767px){
-    h1{
-        font: 700 22px var(--Nunito)!important;
+@media (max-width: 767px) {
+    h1 {
+        font: 700 22px var(--Nunito) !important;
     }
-    
-    h2{
-        font: 600 18px var(--Nunito)!important;
+    h2 {
+        font: 600 18px var(--Nunito) !important;
     }
-    p{
-        font: 400 16px var(--Nunito)!important;
+    p {
+        font: 400 16px var(--Nunito) !important;
     }
-
-    .swiper{
-        width: 90%!important;
+    .swiper {
+        width: 90% !important;
     }
-    .slide img{
+    .slide img {
         width: 100vw;
         overflow: hidden;
-        object-fit: cover; 
+        object-fit: cover;
     }
-    .texto_sobreposto img{
+    .texto_sobreposto img {
         display: none;
     }
-    .texto_sobreposto h1{ 
-        width: 100%;  
-        margin: 40px;     
+    .texto_sobreposto h1 {
+        width: 100%;
+        margin: 40px;
         font-size: 30px;
     }
-    .botao{
+    .botao {
         margin-left: 40px;
     }
-    .flex-intro{
-        width: 100vw; height: auto; top: 10%;
+    .flex-intro {
+        width: 100vw;
+        height: auto;
+        top: 10%;
         justify-content: center;
     }
-    .intro_compromissos .flex-intro h1{
+    .intro_compromissos .flex-intro h1 {
         width: 100vw;
         text-align: center;
         margin: 0px 10px 25px 10px;
@@ -615,17 +613,18 @@ details ol li p {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    section h1.titulo-secao, .container-wrapper h1.titulo-secao{
+    section h1.titulo-secao,
+    .container-wrapper h1.titulo-secao {
         font-size: 30px;
     }
-    section.servicos h1.titulo-secao{
-        margin:25px;
+    section.servicos h1.titulo-secao {
+        margin: 25px;
     }
-    .module.parallax span{
+    .module.parallax span {
         letter-spacing: .280em;
         margin-bottom: 30px;
     }
-    .module.parallax h1.titulo-secao{
+    .module.parallax h1.titulo-secao {
         width: auto;
         text-align: center;
         margin: 0 10px;
@@ -633,30 +632,36 @@ details ol li p {
     :focus {
         outline: none;
     }
-    .cookies{
+    .cookies {
         flex-wrap: wrap;
     }
-    .cookies .cookies-mensagem .flex-cookies-msg i.fa-solid.fa-plus.mbl{
-        display: block; 
+    .cookies .cookies-mensagem .flex-cookies-msg i.fa-solid.fa-plus.mbl {
+        display: block;
     }
-    .cookies .cookies-button i.fa-solid.fa-plus.dsktp{
+    .cookies .cookies-button i.fa-solid.fa-plus.dsktp {
         display: none;
     }
-    .cookies .cookies-mensagem{
-        margin: 40px; width: auto;
+    .cookies .cookies-mensagem {
+        margin: 40px;
+        width: auto;
     }
-    .cookies .cookies-button{
+    .cookies .cookies-button {
         margin: 0 40px;
     }
-    .cookies .cookies-button button{
-        padding: 10px 140px; margin-bottom: 40px;
-    }   
+    .cookies .cookies-button button {
+        padding: 10px 140px;
+        margin-bottom: 40px;
+    }
 }
 /* ================ FIM MEDIA QUERY (MAX-WIDTH: 767px) ================ */
-
-
 /* ========================== SCROLL REVEAL ========================== */
-.img-topo-site, .txt-topo-site, .swiper-wrapper, .flex-intro, .servicos, .cookies{
+.swiper-wrapper,
+.flex-intro,
+.servicos,
+.titulo-secao,
+.btn-secao,
+.summary_faq,
+.cookies {
     visibility: hidden;
 }
 /* ======================== FIM SCROLL REVEAL ======================== */

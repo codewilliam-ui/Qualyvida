@@ -1,11 +1,15 @@
+@charset "utf-8";
+/* ====================== FIM CONFIGURAÇÃO UNICODE ===================== */
+/* ========================= FONTES IMPORTADAS ========================= */
 @import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-
+/* ======================= FIM FONTES IMPORTADAS ======================= */
+/* ======================= CONFIGURAÇÕES GLOBAIS ======================= */
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
-
+/* ===================== FIM CONFIGURAÇÕES GLOBAIS ===================== */
 /* =============================== ROOT ================================ */
 :root {
     /* Variáveis da cor azul */
@@ -45,17 +49,13 @@
     /* Variáveis das fontes */
     --Nunito: 'Nunito', sans-serif;
 }
-
 /* ============================= FIM ROOT ============================== */
-
-
-/* ============================= BLOG =============================== */
+/* =============================== BLOG ================================ */
 .blog {
     width: 100vw;
     margin: 0 auto;
     height: 50vh;
 }
-
 .banner-parallax {
     display: flex;
     height: 50vh;
@@ -70,23 +70,18 @@
     background-attachment: fixed;
     /* cria o efeito parallax */
 }
-
 .banner-parallax.first {
     background-image: url('../img/reabilitação.png');
 }
-
 .banner-parallax.second {
     background-image: url('../img/Banner\ -\ Acompanhamento.png');
 }
-
 .banner-parallax.third {
     background-image: url('../img/Banner\ -\ Intelectual.png');
 }
-
 .banner-parallax.fourth {
     background-image: url('../img/Banner\ -\ Alzheimer.png');
 }
-
 .banner-parallax.fifth {
     background-image: url('../img/Item-5.png');
 }
@@ -102,7 +97,6 @@
 .banner-parallax.nineth {
     background-image: url('../img/Banner\ -\ Cuidados.png');
 }
-
 @media (max-width: 720px) {
     .banner-parallax.second {
         background-image: url('../img/paciente.jpg');
@@ -122,8 +116,6 @@
         background-position: 60% 0%;
     }
 }
-
-
 .banner-parallax::before {
     content: "";
     height: 100%;
@@ -132,26 +124,18 @@
     z-index: 0;
     background: rgba(0, 0, 0, 0.258);
 }
-
 .texto-blog {
     z-index: 2;
     position: absolute;
     top: 50%;
 }
-
 .texto-blog h1 {
     font: 700 40px var(--Nunito);
     color: white;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.144);
     text-align: center;
 }
-
-/* =========================== FIM BLOG ============================= */
-
-.header .active {
-    color: var(--vermelho);
-}
-
+/* ============================= FIM BLOG ============================= */
 main {
     position: relative;
     margin: 50px auto;
@@ -162,55 +146,46 @@ main {
     column-gap: 50px;
     width: 100%;
 }
-
 @media only screen and (min-width: 1300px) {
     .main {
         max-width: 1240px;
     }
 }
-
 @media only screen and (min-width: 1300px) {
     .main {
         max-width: 1240px;
         width: 100%;
     }
 }
-
 @media (min-width: 1200px) {
     .main {
         max-width: 1140px;
     }
-
 }
-
 @media (min-width: 992px) {
     .main {
         max-width: 960px;
     }
-
     .blog-item {
         max-width: 50%;
     }
 }
-
 @media (min-width: 768px) {
     .main {
         max-width: 720px;
     }
 }
-
 @media (min-width: 576px) {
     .main {
         max-width: 540px;
     }
 }
-
+/* ============================= BLOG ITEM ============================= */
 .blog-item {
     width: 100%;
     padding: 0 15px;
     box-sizing: border-box;
 }
-
 .blog-item .container {
     position: relative;
     margin-bottom: 48px;
@@ -220,71 +195,57 @@ main {
     padding: 15px;
     transition: 0.3s;
 }
-
 .blog-item .texto-item {
     padding: 10px 15px 20px;
 }
-
 @media (max-width:720px) {
-
     .blog-item .texto-item h1,
     .blog-item .texto-item h2,
     h3 {
         font: 700 18px var(--Nunito) !important;
     }
 }
-
 .blog-item .texto-item h1 {
     font: 700 26px var(--Nunito);
     margin: 4px 0 10px;
     line-height: 35px;
 }
-
 .blog-item .data-item,
 .icone-data {
     color: var(--space);
     margin-bottom: 22px;
     font: 400 13px var(--Nunito);
 }
-
 .blog-item .data-item>span:not(:last-child) {
     margin-right: 12px;
 }
-
 .icone-data i {
     margin-right: 3px;
     color: var(--vermelho);
 }
-
 .blog-item p, .blog-item ul {
     font: 400 16px var(--Nunito);
     line-height: 1.7rem;
     color: var(--cinza);
     margin-bottom: 20px;
-
 }
-
 .blog-item ul {
     padding-left: 30px;
 }
-
 .blog-item ul li {
     margin-bottom: 8px;
     list-style: disc;
 }
-
 .blog-item .texto-item h2 {
     font: 700 22px var(--Nunito);
     margin-bottom: 15px;
     color: var(--space);
 }
-
 .blog-item .texto-item h3 {
     font: 700 20px var(--Nunito);
     margin-bottom: 15px;
     color: var(--space);
 }
-
 .blog-item .texto-item .container-img {
     width: 100%;
     height: 200px;
@@ -292,7 +253,6 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.092);
     margin-bottom: 30px;
 }
-
 .blog-item .texto-item img {
     width: 100%;
     height: 100%;
@@ -320,16 +280,13 @@ main {
     font: 700 15px var(--Nunito);
     transition: .5s;
 }
-
 .blog-item .blog-button i {
     transition: .5s;
     margin-left: 5px;
 }
-
 .blog-item .blog-button span:hover {
     color: var(--vermelho);
 }
-
 .blog-item .blog-button:hover i {
     padding-left: 10px;
 }
@@ -350,8 +307,6 @@ main {
     background-color: transparent;
     color: var(--vermelho);
 }
-/*  */
-
 .swiper {
     width: 100%;
     height: auto;
@@ -359,21 +314,17 @@ main {
     box-sizing: border-box;
     margin-bottom: 20px;
 }
-
 @media (max-width:720px) {
     .swiper {
         width: 90%;
     }
-
     .explorar {
         text-align: center;
     }
-
     .swiper-slide {
         height: 180px !important;
     }
 }
-
 .swiper-slide {
     text-align: center;
     border-radius: 10px;
@@ -383,7 +334,6 @@ main {
     width: 210px;
     height: 150px;
 }
-
 .swiper-slide a img {
     position: relative;
     display: block;
@@ -391,7 +341,6 @@ main {
     height: 100%;
     object-fit: cover;
 }
-
 .swiper-slide span {
     width: 100%;
     height: 100%;
@@ -410,10 +359,8 @@ main {
     padding: 0 10px 20px;
     box-sizing: border-box;
 }
-
-/*  */
-
-
+/* =========================== FIM BLOG ITEM =========================== */
+/* =============================== POSTS =============================== */
 section.posts {
     padding: 40px 30px 40px;
     margin-bottom: 48px;
@@ -428,19 +375,16 @@ section.posts {
     flex-direction: column;
     row-gap: 20px;
 }
-
 section.posts .container-posts {
     display: flex;
     align-items: start;
     justify-content: center;
 }
-
 section.posts h2 {
     display: inline-block;
     font: 600 20px var(--Nunito);
     color: var(--space);
 }
-
 section.posts .hr {
     display: block;
     width: 100px;
@@ -448,18 +392,15 @@ section.posts .hr {
     background-color: var(--vermelho);
     margin: 8px 0 40px;
 }
-
 section.posts .texto-post p {
     font: 500 15px var(--Nunito);
     transition: .4s;
     color: var(--space);
     margin-bottom: 5px;
 }
-
 section.posts .texto-post p:hover {
     color: var(--vermelho);
 }
-
 section.posts .img-post {
     width: 150px;
     height: 45px;
@@ -467,14 +408,12 @@ section.posts .img-post {
     overflow: hidden;
     padding-right: 15px;
 }
-
 section.posts .img-post img {
     max-width: 100%;
     height: auto;
     overflow-clip-margin: content-box;
     overflow: clip;
 }
-
 aside .texto-aside {
     display: flex;
     flex-wrap: wrap;
@@ -483,23 +422,19 @@ aside .texto-aside {
     gap: 20px;
     text-align: center;
 }
-
 aside .container-aside {
     width: 100%;
     height: 100px;
     border-radius: 50%;
     overflow: hidden;
 }
-
 aside .container-aside img {
     width: 100px;
     height: 100px;
 }
-
 aside span {
     font: 700 15px var(--Nunito);
 }
-
 aside button {
     color: white;
     text-shadow: black;
@@ -510,9 +445,15 @@ aside button {
     font: 400 14px var(--Nunito);
     letter-spacing: 1px;
 }
-
 aside button:hover {
     background-color: transparent;
     color: var(--amarelo);
     border: 1px solid var(--amarelo);
 }
+/* ============================= FIM POSTS ============================= */
+/* ============================ SCROLL REVEAL ========================== */
+.container,
+.texto-aside {
+    visibility: hidden;
+}
+/* ========================= FIM SCROLL REVEAL ======================== */
