@@ -390,6 +390,13 @@ section.module.parallax {
     -moz-background-size: cover;
     -a-background-size: cover;
 }
+@media (max-width:720px){
+    section.module.parallax{
+    background-image: url(../img/parallax.png);
+    background-position: 30% 50%;
+    background-attachment: local;
+    }
+}
 section.module.parallax::after {
     content: "";
     height: 100%;
