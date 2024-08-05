@@ -178,6 +178,7 @@ body {
     border-radius: 3px;
     font: 700 17px var(--Nunito);
     transition: .4s;
+    cursor: pointer;
 }
 .intro_compromissos button:hover {
     background-color: transparent;
@@ -392,8 +393,7 @@ section.module.parallax {
 }
 @media (max-width:720px){
     section.module.parallax{
-    background-image: url(../img/parallax.png);
-    background-position: 30% 50%;
+    background-image: url(../img/Parallax\ -mobile.png);
     background-attachment: local;
     }
 }

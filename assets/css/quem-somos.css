@@ -13,7 +13,7 @@
 }
 /* ===================== FIM CONFIGURAÇÕES GLOBAIS ===================== */
 /* =============================== BODY ================================ */
-body {
+html {
     width: 100vw;
     overflow-x: hidden;
 }
@@ -189,6 +189,7 @@ section.quem-somos .container-texto .btn-contato button {
     font: 500 16px var(--Nunito);
     border-radius: 5px;
     transition: .4s;
+    cursor: pointer;
 }
 section.quem-somos .container-texto .btn-contato button:hover {
     background-color: transparent;

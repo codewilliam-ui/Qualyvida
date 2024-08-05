@@ -9,6 +9,10 @@
     padding: 0;
     text-decoration: none;
 }
+html{
+    width: 100vw;
+    overflow-x: hidden;
+}
 /* ===================== FIM CONFIGURAÇÕES GLOBAIS ===================== */
 /* =============================== ROOT ================================ */
 :root {
@@ -444,6 +448,7 @@ aside button {
     transition: all .5s;
     font: 400 14px var(--Nunito);
     letter-spacing: 1px;
+    cursor: pointer;
 }
 aside button:hover {
     background-color: transparent;
