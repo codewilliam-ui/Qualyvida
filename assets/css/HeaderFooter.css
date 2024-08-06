@@ -13,8 +13,8 @@
 }
 /* ===================== FIM CONFIGURAÇÕES GLOBAIS ===================== */
 /* =============================== BODY ================================ */
-html {
-  width: 100vw;
+body {
+  width: 100vw!important;
   overflow-x: hidden;
 }
 /* ============================= FIM BODY ============================== */
@@ -73,7 +73,7 @@ html {
   align-items: center;
   position: fixed;
   background-color: white;
-  width: 100%;
+  width: 100vw;
   z-index: 4;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.081);
 }
