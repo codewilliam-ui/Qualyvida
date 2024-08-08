@@ -256,7 +256,6 @@ body {
   text-decoration: none;
   color: white;
   padding: 5px;
-  font-size: 20px;
   border-radius: 50px;
   transition: all .3s;
 }
@@ -273,7 +272,7 @@ body {
   text-align: center;
 }
 .adicionais a h3 {
-  font: normal 16px var(--Nunito) !important;
+  font: normal 16px var(--Nunito);
   color: white;
   border-bottom: 1px solid rgba(255, 255, 255, 0);
   padding-bottom: 2px;
@@ -288,13 +287,12 @@ body {
   background-color: var(--índigo_blue);
   border-radius: 50%;
 }
-.copyright p {
+.copyright p{
   text-align: center;
   padding-top: 20px;
   font: normal 14px var(--Nunito);
 }
-.copyright p a {
-  text-decoration: none;
-  color: white;
+.copyright p a{
+  text-decoration: none; color: white;
 }
 /* ============================ FIM RODAPÉ ============================= */
